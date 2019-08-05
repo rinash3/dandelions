@@ -1,19 +1,17 @@
 import React, { Component } from "react";
-import "./style.css";
 import "../../share/UIbasics.css";
-import sample from './background.mp4';
+import "./style.css";
 import Background from "./background";
 import Button from "../../share/button"
-// import Checkbox from "./checkbox"
-
+import Checkbox from "./checkbox.js"
 
 class Giverfill extends Component {
 
     render() {
         return (
-            <div>
-                <Background src={sample} />
-                <div className="container">
+            <div >
+                <Background  />
+                <div className="formbg container">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
                     <select className="custom-select" name="catagory">
@@ -27,8 +25,12 @@ class Giverfill extends Component {
                     <label className="margin-left-5vw white helvatica"
                         htmlFor="objName">Object name:</label>
                     <input className="white"></input>
-                    {/* <Checkbox/> */}
-                    <Button/>
+                    <br/>
+                    <Checkbox/>
+                    <br/>
+                    <div className="margin-left-10vw">
+                    <Button className="margin-left-10vw"/>
+                    </div>
                 </div>
             </div>
         );

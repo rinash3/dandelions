@@ -1,8 +1,4 @@
 
-body, html { 
-    background: none;
-    margin: 0 }
-
 .background-width{
     height: 100%;
     float: left;
@@ -10,7 +6,7 @@ body, html {
     padding: none;
     position: fixed;
     }
-    .container{
+    .formbg{
         margin:8em auto 8em auto;
         padding:5em;
         opacity: 0.95;
@@ -82,5 +78,7 @@ body, html {
       .margin-left-5vw{
         margin-left:5vw;
       }
-
-      
+      .margin-left-10vw{
+        margin-left:30vw;
+        margin-top:2em;
+      }
