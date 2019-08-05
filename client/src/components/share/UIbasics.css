@@ -1,0 +1,46 @@
+h1,h2,h5.beth{
+    font-family: 'Beth Ellen', cursive;
+}
+h3,h4,p,.helvatica{
+    font-family: helvetica;
+}
+.white{
+    color:white;
+}
+.maroon{
+    color:#8C1919;
+}
+.black{
+    color:black;
+}
+h1{
+    font-size:36px;
+}
+h2{
+    font-size:22px;
+}
+h3{
+    font-size:21px;
+}
+h5{
+    font-size:16px;
+}
+p{
+    font-size:16px;
+}
+input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid;
+}
+button{
+    background:transparent;
+    border:none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+button:hover{
+    transform: scale(1.2);
+
+}

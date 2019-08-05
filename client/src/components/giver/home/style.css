@@ -1,0 +1,41 @@
+body{
+    background-image: url("./home.jpg");
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+form{
+    position:fixed;
+    top:35%;
+    right:10%;
+}
+h1{
+    margin-bottom: 1em;
+}
+input{
+    margin: 1em 1em 1em 1em;
+    width:20vw;
+}
+a{
+    text-decoration: underline;
+    font-size:18px;
+    position: fixed;
+    top:2%;
+    right:3%;
+}
+button{
+    color:white;
+    margin-left:18vw;
+    margin-top:2em;
+}
+label{
+    font-family: 'Beth Ellen', cursive;
+}
