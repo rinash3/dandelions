@@ -1,27 +1,15 @@
 import React from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
+import "../../share/UIbasics.css"
 
-export default function Checkboxes() {
-  const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-    checkedF: true,
-  });
-
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
-  };
-
-  return (
-    <div>
-      <Checkbox
-        checked={state.checkedA}
-        onChange={handleChange('checkedA')}
-        value="checkedA"
-        inputProps={{
-          'aria-label': 'primary checkbox',
-        }}
-      />
-      </div>
+function Checkbox() {
+    return (
+        <div className="margin-left-5vw pretty p-default p-fill">
+        <input type="checkbox" />
+        <div className="state p-danger">
+            <label className="white">Once you choose to donate the object, you can’t retrieve it in 3 monthes</label>
+        </div>
+    </div>
     );
   }
+
+export default Checkbox;
