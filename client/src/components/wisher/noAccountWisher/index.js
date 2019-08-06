@@ -106,6 +106,7 @@ class WisherForm extends Component {
                     <button onClick={this.handleFormSubmit}>Join in</button>
 
                 </form>
+                <Button />
             </div>
         )
     }

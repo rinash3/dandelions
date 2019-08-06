@@ -26,6 +26,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "pretty-checkbox": "^3.0.3",
-    "react-codepen-embed": "^1.0.1"
+    "react-codepen-embed": "^1.0.1",
+    "routs": "^1.0.6"
   }
 }
