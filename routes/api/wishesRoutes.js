@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const wisherController = require("../../controllers/wishController");
+const wishController = require("../../controllers/wishController");
 
 // Matches with "/api/wishes"
 //creates using controller

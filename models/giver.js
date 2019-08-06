@@ -9,5 +9,5 @@ const GiverSchema=new Schema({
     tickets:{type:Number, required:true, default:0}
 });
 
-const Giver = mongoose.Schema("Giver",GiverSchema);
+const Giver = mongoose.model("Giver", GiverSchema);
 module.exports=Giver;
