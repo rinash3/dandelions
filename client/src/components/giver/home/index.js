@@ -4,7 +4,14 @@ import "../../share/UIbasics.css";
 import Button from "../../share/button"
 import Giverhomepagebg from "./giverhomepagebg"
 class Giverhome extends Component {
-
+    state={
+        email:"",
+        password:""
+    }
+    click = event =>{
+        event.preventDefault();
+        console.log("Hello");
+    }
     render() {
         return (
             
@@ -19,7 +26,7 @@ class Giverhome extends Component {
                     <label className="white beth" htmlFor="giverEmail">Email:</label>
                     <input id="giverEmail" name="giverEmail" className="white" type="email"></input>
                     <br/><br/>
-                    <Button />
+                    <Button click={this.click}/>
                 </form>
             </div>
         );
