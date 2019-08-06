@@ -4,7 +4,10 @@ import "../../share/UIbasics.css";
 import Button from "../../share/button"
 import Giverhomepagebg from "./giverhomepagebg"
 class Giverhome extends Component {
-
+    state={
+        email:"",
+        password:""
+    }
     click = event =>{
         event.preventDefault();
         console.log("Hello");
