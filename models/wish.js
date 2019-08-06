@@ -6,7 +6,7 @@ const WishSchema=new Schema({
     category:{type:String, required:true},
     giverId:{type:String, required:true},
     WisherId:{type:String, required:true},
-    status:{type:String, required:true},//  Fulfilled/waiting for giver/on its way
+    status:{type:Boolean, required:true},// true or false?
     date: { type: Date, default: Date.now }
 });
 
