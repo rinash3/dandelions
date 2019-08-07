@@ -6,6 +6,7 @@ import Giverfill from "./components/giver/giverfill/index";
 import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
 import Wisherhome from "./components/wisher/home/index";
+import WisherRegister from "./components/wisher/register";
 
 
 
@@ -17,9 +18,8 @@ function App() {
         <Switch>
           {/* wisher's module */}
           <Route exact path="/wisher" component={Wisherhome} />
-          {/* <Route exact path="/giver/fills" component={Giverfill} />
-          <Route exact path="/giver/wishes" component={Wisherdisplay} />
-          <Route exact path="/giver/connect" component={PrintAddress} /> */}
+          <Route exact path="/wisher/register" component={WisherRegister} />
+
           {/* giver's modult */}
           <Route exact path="/giver" component={Giverhome} />
           <Route exact path="/giver/fills" component={Giverfill} />
