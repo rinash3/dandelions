@@ -39,14 +39,14 @@ class WisherForm extends Component {
             <div>
                 <h1>Tell us about you</h1>
                 <form>
-                    <p>Email: {this.state.email}</p>
+                    {/* <p>Email: {this.state.email}</p>
                     <p>Password: {this.state.password}</p>
                     <p>First Name: {this.state.firstName}</p>
                     <p>Last Name: {this.state.lastName}</p>
                     <p>Address: {this.state.address}</p>
                     <p>Apt: {this.state.apt}</p>
                     <p>City: {this.state.city}</p>
-                    <p>Zip Code: {this.state.zipCode}</p>
+                    <p>Zip Code: {this.state.zipCode}</p> */}
                     <input
                         type="text"
                         placeholder="Email"
