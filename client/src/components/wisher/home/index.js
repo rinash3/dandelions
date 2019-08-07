@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
-
+import WisherHomebg from "./wisherhomebg"
 
 
 class Wisherhome extends Component {
     render() {
         return (
             <div className="background container">
+                <WisherHomebg />
                 <form>
                     <h1 className="black">Make your wish</h1>
                     <a className="black" href="/">Fullfill a wish</a>
