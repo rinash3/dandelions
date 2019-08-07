@@ -4,7 +4,7 @@ import "./style.css";
 import Background from "./background";
 import Button from "../../share/button"
 import Checkbox from "./checkbox.js"
-
+import Category from "../../share/catagory"
 class Wisherfill extends Component {
 
     render() {
@@ -14,13 +14,7 @@ class Wisherfill extends Component {
                 <div className="formbg container">
                     <h1 className="white">What do you wish to have?</h1>
                     <br /><br /><br />
-                    <select className="custom-select" name="catagory">
-                        <option value="category">Choose object catagory</option>
-                        <option value="dresses">Dresses</option>
-                        <option value="dolls">Dolls</option>
-                        <option value="coats" >Coats</option>
-                        <option value="shirts">Shirts</option>
-                    </select>
+                    <Category />
                     <br /><br />
                     <label className="margin-left-5vw white helvatica"
                         htmlFor="objName">Object name:</label>

@@ -5,6 +5,8 @@ import Giverhome from "./components/giver/home/index";
 import Giverfill from "./components/giver/giverfill/index";
 import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
+import Wisherhome from "./components/wisher/home/index";
+
 
 
 
@@ -14,7 +16,10 @@ function App() {
       <div>
         <Switch>
           {/* wisher's module */}
-
+          <Route exact path="/wisher" component={Wisherhome} />
+          {/* <Route exact path="/giver/fills" component={Giverfill} />
+          <Route exact path="/giver/wishes" component={Wisherdisplay} />
+          <Route exact path="/giver/connect" component={PrintAddress} /> */}
           {/* giver's modult */}
           <Route exact path="/giver" component={Giverhome} />
           <Route exact path="/giver/fills" component={Giverfill} />
