@@ -5,6 +5,7 @@ import Giverhome from "./components/giver/home/index";
 import Giverfill from "./components/giver/giverfill/index";
 import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
+import Homepage from "./components/homapage/index"
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <div>
         <Switch>
+        <Route exact path="/" component={Homepage} />
           {/* wisher's module */}
 
           {/* giver's modult */}
