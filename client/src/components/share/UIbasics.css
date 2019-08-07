@@ -4,6 +4,7 @@ h1,h2,h5.beth{
 h3,h4,p,.helvatica{
     font-family: helvetica;
 }
+
 .white{
     color:white;
 }
@@ -43,4 +44,16 @@ button{
 button:hover{
     transform: scale(1.2);
 
+}
+.size-28,td,th{
+    font-size:28px;
+}
+td,th{
+    padding-left:4em;
+    text-align:center;
+    padding-top:1em;
+}
+
+.size-18{
+    font-size:18px;
 }
