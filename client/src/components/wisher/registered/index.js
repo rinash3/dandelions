@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../../share/UIbasics.css";
-import "./style.css";
-import Background from "./background";
+import React, { Component } from "react"
+import "../../share/UIbasics.css"
+import "./style.css"
+import Background from "./background"
 import Button from "../../share/button"
 import Checkbox from "./checkbox.js"
 import Category from "../../share/catagory"
@@ -25,7 +25,7 @@ class Wisherfill extends Component {
                     <Checkbox />
                     <br />
                     <div className="margin-left-10vw">
-                        <Button className="margin-left-10vw" />
+                        <Button />
                     </div>
                 </div>
             </div>
