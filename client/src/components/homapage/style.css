@@ -1,0 +1,74 @@
+
+  #canvas{
+    position:absolute;
+    z-index:1;
+  }
+  .logo{
+   position: absolute;
+    top:20%;
+    width:100%;
+    text-align: center;
+    font-family: Beth Ellen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120px;
+    line-height: 266px;
+    text-align: center;
+    letter-spacing: 0.439286px;
+
+    color: #EB5757;
+    z-index:3;
+
+  }
+  .homebtn{
+    width: 238px;
+    height: 62px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 21px;
+    font-weight:bold;
+    cursor: pointer;
+    position: relative;
+    z-index:3;
+    margin-top:30em;
+    left:8em;
+  }
+  .homebtn:hover{
+    background:black;
+    color:white;
+  }
+  .home-lefthf{
+    background:#EB5757;
+    position:absolute;
+    left:0;
+    width:50%;
+    height:70em;
+    margin-top:14em;
+  }
+  .home-righthf{
+    background:#F18989;
+    position:absolute;
+    right:0;
+    width:50%;
+    height:70em;
+    margin-top:14em;
+    
+  }
+  .home-dc{
+    width:70%;
+    margin:5em 15em auto 5em;
+    font-size: 21px;
+  }
+
+  /* @media only screen and (max-width: 600px) {
+    .home-lefthf{
+
+      width:100%;
+    }
+    .home-righthf{
+      width:100%;
+    }
+  } */
