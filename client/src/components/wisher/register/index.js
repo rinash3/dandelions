@@ -3,7 +3,7 @@ import "./style.css";
 import "../../share/UIbasics.css";
 //import sample from './background.mp4';
 // import Background from "./background";
-// import Button from "../../share/button"
+import Button from "../../share/button"
 
 
 

@@ -22,7 +22,7 @@ function Descriptionright(props) {
                         <br />
                 Fullfill a wish!</p>
                 <br/>
-            <Homebtn text="Fullfill wish" style={moveup}/>
+            <Homebtn text="Fullfill wish" style={moveup} location="/Giver"/>
         </div>
     )
 }

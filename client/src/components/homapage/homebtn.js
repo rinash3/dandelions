@@ -1,10 +1,11 @@
 import React from 'react';
 import "../share/UIbasics.css"
 import "./style.css"
+import {Link} from "react-router-dom";
 
 function Homebtn(props) {
     return (
-        <button onClick={props.Click} className="homebtn black" style={props.style}>{props.text}</button>
+        <Link to={props.location} className="homebtn black" style={props.style}>{props.text}</Link>
     )
 }
 

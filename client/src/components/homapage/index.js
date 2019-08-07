@@ -9,22 +9,14 @@ import Descriptionright from "./descriptionright"
 
 class Homepage extends Component {
 
-    dtWisher = (e) => {
-        e.preventDefault();
-    }
-    dtGiver = (e) => {
-        e.preventDefault();
-    }
-
-
     render() {
         return (
 
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
-                <Homebtn text="Make a wish" Click={this.dtWisher} />
-                <Homebtn text="Fullfill a wish" Click={this.dtGiver} />
+                <Homebtn text="Make a wish" location="/Wisher"/>
+                <Homebtn text="Fullfill a wish" location="/Giver"/>
 
                 <div className="home-lefthf">
                     <Descriptionleft />

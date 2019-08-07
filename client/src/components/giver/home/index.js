@@ -10,7 +10,7 @@ class Giverhome extends Component {
     }
     click = event =>{
         event.preventDefault();
-        console.log("Hello");
+        $.get()
     }
     render() {
         return (

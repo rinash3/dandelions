@@ -23,7 +23,7 @@ function Descriptionleft(props) {
                             <br />
                 What do you wait? Make a wish!</p>
                 <br/>
-            <Homebtn style={moveup} text="Make a wish" />
+            <Homebtn style={moveup} text="Make a wish" location="/Wisher"/>
         </div>
     )
 }
