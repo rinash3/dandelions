@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
-
+import { Link } from "react-router-dom";
 
 const Fullfill = (props) => {
 
 
 return (
-<h1 id={props.id}>Fullfill wish -></h1>
+<Link id={props.id} to="/giver/connect">Fullfill wish -></Link>
 )
 
 }

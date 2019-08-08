@@ -26,7 +26,7 @@ class Giverhome extends Component {
                     <label className="white beth" htmlFor="giverEmail">Email:</label>
                     <input id="giverEmail" name="giverEmail" className="white" type="email"></input>
                     <br/><br/>
-                    <Button click={this.click}/>
+                    <Button click={this.click} location="/giver/fills"/>
                 </form>
             </div>
         );
