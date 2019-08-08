@@ -7,9 +7,7 @@ import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
 import Wisherhome from "./components/wisher/home/index";
 import WisherRegister from "./components/wisher/register";
-
-
-
+import WisherRegistered from "./components/wisher/registered";
 
 function App() {
   return (
@@ -19,6 +17,7 @@ function App() {
           {/* wisher's module */}
           <Route exact path="/wisher" component={Wisherhome} />
           <Route exact path="/wisher/register" component={WisherRegister} />
+          <Route exact path="/wisher/registered" component={WisherRegistered} />
 
           {/* giver's modult */}
           <Route exact path="/giver" component={Giverhome} />
