@@ -18,20 +18,26 @@ class Homepage extends Component {
 
 
     render() {
+       
+        const someMargin={
+            marginLeft:'15em',
+            top:'32em'
+        }
+        const moreMargin={
+            marginLeft:'10em',
+           top:'32em'
+        }
         return (
-
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
-                <Homebtn text="Make a wish" Click={this.dtWisher} />
-                <Homebtn text="Fullfill a wish" Click={this.dtGiver} />
+                <Homebtn style={someMargin} location="/wisher/" text="Make a wish" Click={this.dtWisher} />
+                <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish" Click={this.dtGiver} />
 
-                <div className="home-lefthf">
-                    <Descriptionleft />
-                </div>
-
-                <div className="home-righthf">
-                    <Descriptionright />
+                <div className="descrp-container">
+                        <Descriptionleft  className="home-lefthf" />
+                    
+                        <Descriptionright className="home-righthf"/>
                 </div>
             </div>
         );
