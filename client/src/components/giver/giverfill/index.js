@@ -58,7 +58,7 @@ class Giverfill extends Component {
                     <Checkbox />
                     <br />
                     <div className="margin-left-10vw">
-                        <Button className="margin-left-10vw" />
+                        <Button className="margin-left-10vw" location="/giver/wishes"/>
                     </div>
                 </div>
             </div>
