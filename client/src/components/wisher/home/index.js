@@ -2,22 +2,19 @@ import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
-import WisherHomebg from "./wisherhomebg"
-
 
 class Wisherhome extends Component {
     render() {
         return (
             <div className="background container">
-                <WisherHomebg />
                 <form>
-                    <h1 className="black">Make your wish</h1>
-                    <a className="black" href="/">Fullfill a wish</a>
-                    <label className="black beth" for="Name">Name:</label>
-                    <input id="Name" name="Name" className="black" type="text"></input>
+                    <h1 className="white">Make your wish</h1>
+                    <a className="white" href="/">Fullfill a wish</a>
+                    <label className="white beth" for="Name">Name:</label>
+                    <input id="Name" name="Name" className="white" type="text"></input>
                     <br />
-                    <label className="black beth" for="password">Password:</label>
-                    <input id="password" name="password" className="black" type="password"></input>
+                    <label className="white beth" for="password">Password:</label>
+                    <input id="password" name="password" className="white" type="password"></input>
                     <br /><br />
                     <Button />
                 </form>
