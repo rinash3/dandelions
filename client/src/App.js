@@ -18,7 +18,11 @@ function App() {
     <Router>
       <div>
         <Switch>
+<<<<<<< HEAD
           <Route exact path="/" component={Homepage} />
+=======
+        <Route exact path="/" component={Homepage} />
+>>>>>>> 11d9ac1ae60fc1475494ee5b4899afb216fffd38
           {/* wisher's module */}
           <Route exact path="/wisher" component={Wisherhome} />
           <Route exact path="/wisher/register" component={WisherRegister} />
