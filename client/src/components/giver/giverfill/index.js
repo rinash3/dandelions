@@ -23,6 +23,7 @@ class Giverfill extends Component {
     }
 
     render() {
+
         const btn = {
             color: 'white',
             marginTop: '2em',
@@ -30,6 +31,7 @@ class Giverfill extends Component {
             textAlign: 'left',
             zIndex:"10",
             marginLeft:'6em'
+
         }
         return (
             <div >
@@ -66,7 +68,6 @@ class Giverfill extends Component {
                     <Checkbox />
                     <br />
                     <Button className="btn" style={btn} location="/giver/wishes" />
-
                 </div>
             </div>
         );

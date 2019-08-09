@@ -10,32 +10,9 @@ import Descriptionright from "./descriptionright"
 class Homepage extends Component {
 
 
-    dtWisher = (e) => {
-        e.preventDefault();
-    }
-    dtGiver = (e) => {
-        e.preventDefault();
-    }
-
-
-
-
-
     render() {
        
         const someMargin={
-
-
-            marginLeft:'25%',
-            top:'32em'
-        }
-        const moreMargin={
-            marginLeft:'12vw',
-
-            marginLeft:'15em',
-            top:'32em'
-        }
-       
             marginLeft:'25%',
             top:'32em'
         }
@@ -47,15 +24,8 @@ class Homepage extends Component {
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
-
-
                 <Homebtn style={someMargin} location="/wisher/" text="Make a wish"/>
                 <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish"/>
-
-                <Homebtn style={someMargin} location="/wisher/" text="Make a wish" Click={this.dtWisher} />
-                <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish" Click={this.dtGiver} />
-
-            
 
                 <div className="descrp-container">
                         <Descriptionleft  className="home-lefthf" />
@@ -67,10 +37,4 @@ class Homepage extends Component {
     }
 }
 
-
-
 export default Homepage;
-
-
-
-
