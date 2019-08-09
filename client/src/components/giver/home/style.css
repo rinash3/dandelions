@@ -9,12 +9,12 @@
 .hp-form{
     position:fixed;
     top:35%;
-    right:10%;
+    left:0;
     z-index:2;
+    margin-left:60%;
+    text-align: left;
 }
-.hb-h1{
-    margin-bottom: 1em;
-}
+
 input{
     margin: 1em 1em 1em 1em;
     width:20vw;
@@ -26,10 +26,9 @@ a{
     top:2%;
     right:3%;
 }
-button{
+.btn{
     color:white;
-    margin-left:18vw;
-    margin-top:2em;
+    z-index:10;
 }
 label{
     font-family: 'Beth Ellen', cursive;

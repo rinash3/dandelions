@@ -8,12 +8,28 @@ import Descriptionright from "./descriptionright"
 
 class Homepage extends Component {
 
+<<<<<<< HEAD:client/src/components/homepage/index.js
     render() {
        
+=======
+
+    render() {
+       
+        const someMargin={
+            marginLeft:'25%',
+            top:'32em'
+        }
+        const moreMargin={
+            marginLeft:'12vw',
+           top:'32em'
+        }
+>>>>>>> 4772e4dd44f01bcc94f51bc4e2fb7552da6f656f:client/src/components/homapage/index.js
         return (
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
+                <Homebtn style={someMargin} location="/wisher/" text="Make a wish"/>
+                <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish"/>
 
                 <div className="descrp-container">
                         <Descriptionleft  className="home-lefthf" />

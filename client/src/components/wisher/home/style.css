@@ -7,6 +7,10 @@ form {
     margin-top: 10%;
 }
 
+.black {
+    margin-top: -1.5em;
+}
+
 .wisherhomebg {
     z-index: 1;
     position: fixed;
@@ -14,4 +18,10 @@ form {
     left: 0px;
     width: 100%;
 
+
+}
+
+.next {
+    margin-top: 29%;
+    margin-right: 35%;
 }

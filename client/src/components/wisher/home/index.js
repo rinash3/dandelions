@@ -2,10 +2,17 @@ import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
+<<<<<<< HEAD
 import WisherHomebg from "./wisherhomebg"
 import WisherForm from "../register"
 import WisherFill from "../registered"
 import API from "../../../utils/API"
+=======
+import "../../wisher/home/style.css"
+import Wisherhomebg from "./wisherhomebg"
+
+
+>>>>>>> 4772e4dd44f01bcc94f51bc4e2fb7552da6f656f
 
 class Wisherhome extends Component {
     state={
@@ -42,8 +49,9 @@ class Wisherhome extends Component {
         if (this.state.registered)
             return <WisherFill />
         return (
-            <div className="background container">
-                <WisherHomebg />
+
+            < div className="background z-index-upup container" >
+
                 <form>
                     <h1 className="black">Make your wish</h1>
                     <a className="black" href="/giver">Fullfill a wish</a>
@@ -55,7 +63,9 @@ class Wisherhome extends Component {
                     <br /><br />
                     <Button click={this.click} />
                 </form>
+                <Wisherhomebg />
             </div>
+
         );
     }
 }

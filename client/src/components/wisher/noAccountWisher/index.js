@@ -2,17 +2,11 @@ import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
 import Background from "./background";
-// import Wisherregbg from "./wisherregbg"
-//import sample from './background.mp4';
-<<<<<<< HEAD
-// import Background from "./background";
 import Button from "../../share/button"
-=======
->>>>>>> 4772e4dd44f01bcc94f51bc4e2fb7552da6f656f
 
 
 
-class WisherForm extends Component {
+class Noaccount extends Component {
     state = {
         email: "",
         password: "",
@@ -39,23 +33,21 @@ class WisherForm extends Component {
         this.setState({ username: "", password: "" });
     };
 
-
     render() {
         return (
-            <div className="background z-index-upup container">
+            
+            <div>
                 <Background/>
                 <h1>Tell us about you</h1>
-                <br></br>
-                <br></br>
-                <form className="wisher">
-                    {/* <p>Email: {this.state.email}</p>
+                <form>
+                    <p>Email: {this.state.email}</p>
                     <p>Password: {this.state.password}</p>
                     <p>First Name: {this.state.firstName}</p>
                     <p>Last Name: {this.state.lastName}</p>
                     <p>Address: {this.state.address}</p>
                     <p>Apt: {this.state.apt}</p>
                     <p>City: {this.state.city}</p>
-                    <p>Zip Code: {this.state.zipCode}</p> */}
+                    <p>Zip Code: {this.state.zipCode}</p>
                     <input
                         type="text"
                         placeholder="Email"
@@ -63,7 +55,6 @@ class WisherForm extends Component {
                         value={this.state.email}
                         onChange={this.handleInputChange}
                     />
-
                     <input
                         type="password"
                         placeholder="Password"
@@ -71,8 +62,6 @@ class WisherForm extends Component {
                         value={this.state.password}
                         onChange={this.handleInputChange}
                     />
-                    <br></br>
-                    <br></br>
                     <input
                         type="firstName"
                         placeholder="First Name"
@@ -87,8 +76,6 @@ class WisherForm extends Component {
                         value={this.state.lastName}
                         onChange={this.handleInputChange}
                     />
-                    <br></br>
-                    <br></br>
                     <input
                         type="address"
                         placeholder="Address"
@@ -103,8 +90,6 @@ class WisherForm extends Component {
                         value={this.state.apt}
                         onChange={this.handleInputChange}
                     />
-                    <br></br>
-                    <br></br>
                     <input
                         type="city"
                         placeholder="City"
@@ -119,17 +104,12 @@ class WisherForm extends Component {
                         value={this.state.zipCode}
                         onChange={this.handleInputChange}
                     />
-                    <br></br>
-                    <br></br>
-                    <br></br>
-
-                    <button className="black" onClick={this.handleFormSubmit}><h2>Join in -></h2></button>
+                    <button onClick={this.handleFormSubmit}>Join in</button>
 
                 </form>
-                {/* <Wisherregbg /> */}
+                <Button location="/wisher/register"/>
             </div>
-
         )
     }
 }
-export default WisherForm;
+export default Noaccount;

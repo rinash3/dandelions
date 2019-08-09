@@ -1,0 +1,22 @@
+h2 {
+    text-align: right;
+
+}
+
+h1 {
+    color: black;
+}
+
+.wisherregbg {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+
+
+}
+
+.wisher {
+    top: 15%;
+}

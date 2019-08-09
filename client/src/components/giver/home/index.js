@@ -57,7 +57,7 @@ class Giverhome extends Component {
                     <label className="white beth" htmlFor="password">Password:</label>
                     <input  onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
                     <br/><br/>
-                    <Button click={this.click}/>
+                    <Button className="btn" style={position} click={this.click} location="/giver/fills"/>
                 </form>
             </div>
         );
