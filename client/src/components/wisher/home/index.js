@@ -25,6 +25,7 @@ class Wisherhome extends Component {
                     <input id="password" name="password" className="black" type="password"></input>
                     <br /><br />
                     <Button className="black beth" location="/wisher/register"/>
+
                 </form>
                 <Wisherhomebg />
             </div>
