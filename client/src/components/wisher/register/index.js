@@ -4,7 +4,7 @@ import "../../share/UIbasics.css";
 import Wisherregbg from "./wisherregbg"
 //import sample from './background.mp4';
 // import Background from "./background";
-import Button from "../../share/button"
+// import Button from "../../share/button"
 
 
 
@@ -42,7 +42,7 @@ class WisherForm extends Component {
                 <h1>Tell us about you</h1>
                 <br></br>
                 <br></br>
-                <form>
+                <form className="wisher">
                     {/* <p>Email: {this.state.email}</p>
                     <p>Password: {this.state.password}</p>
                     <p>First Name: {this.state.firstName}</p>
