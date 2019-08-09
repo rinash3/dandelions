@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
-import Wisherregbg from "./wisherregbg"
+import Background from "./background";
+// import Wisherregbg from "./wisherregbg"
 //import sample from './background.mp4';
-// import Background from "./background";
-// import Button from "../../share/button"
 
 
 
@@ -35,10 +34,11 @@ class WisherForm extends Component {
         this.setState({ username: "", password: "" });
     };
 
+
     render() {
         return (
-
             <div className="background z-index-upup container">
+                <Background/>
                 <h1>Tell us about you</h1>
                 <br></br>
                 <br></br>

@@ -7,7 +7,9 @@ import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
 
 import Homepage from "./components/homapage/index"
+
 import Wisherhome from "./components/wisher/home/index";
+import  Noaccount from "./components/wisher/noAccountWisher";
 import WisherRegister from "./components/wisher/register";
 import WisherRegistered from "./components/wisher/registered";
 
@@ -23,6 +25,7 @@ function App() {
 
           {/* wisher's module */}
           <Route exact path="/wisher" component={Wisherhome} />
+          <Route exact path="/wisher/creatAccount" component={Noaccount} />
           <Route exact path="/wisher/register" component={WisherRegister} />
           <Route exact path="/wisher/registered" component={WisherRegistered} />
 

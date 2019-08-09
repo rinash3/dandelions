@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
-//import sample from './background.mp4';
-// import Background from "./background";
-// import Button from "../../share/button"
+import Background from "./background";
+import Button from "../../share/button"
 
 
 
-class WisherForm extends Component {
+class Noaccount extends Component {
     state = {
         email: "",
         password: "",
@@ -36,7 +35,9 @@ class WisherForm extends Component {
 
     render() {
         return (
+            
             <div>
+                <Background/>
                 <h1>Tell us about you</h1>
                 <form>
                     <p>Email: {this.state.email}</p>
@@ -106,9 +107,9 @@ class WisherForm extends Component {
                     <button onClick={this.handleFormSubmit}>Join in</button>
 
                 </form>
-                <Button />
+                <Button location="/wisher/register"/>
             </div>
         )
     }
 }
-export default WisherForm;
+export default Noaccount;
