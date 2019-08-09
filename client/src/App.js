@@ -6,7 +6,7 @@ import Giverfill from "./components/giver/giverfill/index";
 import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
 
-import Homepage from "./components/homapage/index"
+import Homepage from "./components/homepage/index"
 import Wisherhome from "./components/wisher/home/index";
 import WisherRegister from "./components/wisher/register";
 

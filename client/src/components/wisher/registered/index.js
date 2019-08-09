@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import "../../share/UIbasics.css"
 import "./style.css"
-import Background from "./background"
 import Button from "../../share/button"
 import Checkbox from "./checkbox.js"
 import Category from "../../share/catagory"
@@ -10,7 +9,6 @@ class Wisherfill extends Component {
     render() {
         return (
             <div >
-                <Background />
                 <div className="formbg container">
                     <h1 className="white">What do you wish to have?</h1>
                     <br /><br /><br />

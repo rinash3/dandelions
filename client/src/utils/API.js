@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets the giver with the given email
   getGiver: function(email) {
-    return axios.get("/api/books/" + email);
+    return axios.get("/api/givers/" + email);
   },
   createGiver: function(giver){
     return axios.post("/api/givers", giver);

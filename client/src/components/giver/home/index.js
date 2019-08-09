@@ -3,12 +3,15 @@ import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
 import Giverhomepagebg from "./giverhomepagebg"
-import axios from "axios"
+import Giverfill from "../giverfill"
 import API from "../../../utils/API"
+
 class Giverhome extends Component {
     state={
         email:"",
-        password:""
+        password:"",
+        registered:false,
+        account:{}
     }
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -18,9 +21,29 @@ class Giverhome extends Component {
       };
     click = event =>{
         event.preventDefault();
-        axios.get()
+        API.getGiver(this.state.email).then(res=>{
+            if(res.data){
+                this.setState({account:res.data, registered:true})
+                console.log(res.data);
+                if(res.data.password === this.state.password)
+                    console.log("You were able to log in!");
+                else
+                    console.log("Incorrect password")
+            }
+            else{
+                let person={
+                    email:this.state.email,
+                    password:this.state.password
+                }
+                API.createGiver(person).then(console.log("Created new person"))
+            }
+        })
     }
     render() {
+        //if account found and password is correct redirect to main page for specified giver
+        if(this.state.registered)
+            return <Giverfill person={this.state.account} />
+        //else just keep it the page we are on now
         return (
             
             <div>
@@ -32,7 +55,7 @@ class Giverhome extends Component {
                     <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
                     <br/>
                     <label className="white beth" htmlFor="password">Password:</label>
-                    <input  onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="text"></input>
+                    <input  onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
                     <br/><br/>
                     <Button click={this.click}/>
                 </form>
