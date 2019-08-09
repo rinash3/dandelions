@@ -67,12 +67,11 @@
  .z-index{
      z-index:11;
      color:#8C1919;
-     /* color:black; */
      position: fixed;
      font-family: 'Beth Ellen', cursive;
      font-size:28px;
-     left:20%;
-     top:48%;
+     left:40%;
+     top:50%;
  }
 .print{
     position: fixed;
