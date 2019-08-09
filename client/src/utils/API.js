@@ -14,23 +14,21 @@ export default {
   createWisher:function(wishers){
     return axios.post("/api/wishers", wishers);
   },
-  updateWishlist:function(newlist){
-
+  updateWishlist:function(email,newlist){
+    return axios.put("/api/wishers/"+email,newlist)
   },
-  updateGiverlist:function(newlist){
-
+  updateGiverlist:function(email, newlist){
+    return axios.put("/api/givers/"+email,newlist)
   },
 
-  // Deletes the book with the given id
   deleteWish: function(id) {
     return axios.delete("/api/books/" + id);
   },
   updateWish: function(id, updated){
-
+    return axios.put("/api/wishes/"+id,updated)
   },
 
-  // Saves a book to the database
-  createWish: function(bookData) {
-    return axios.post("/api/wishes", bookData);
+  createWish: function(wish) {
+    return axios.post("/api/wishes", wish);
   }
 };

@@ -12,7 +12,7 @@ class Wisherhome extends Component {
                 <WisherHomebg />
                 <form>
                     <h1 className="black">Make your wish</h1>
-                    <a className="black" href="/">Fullfill a wish</a>
+                    <a className="black" href="/giver">Fullfill a wish</a>
                     <label className="black beth" for="Name">Name:</label>
                     <input id="Name" name="Name" className="black" type="text"></input>
                     <br />

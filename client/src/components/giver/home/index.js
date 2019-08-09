@@ -27,7 +27,7 @@ class Giverhome extends Component {
                 <Giverhomepagebg/>
                 <form className="hp-form">
                     <h1 className="white hp-h1">Fullfill a wish</h1>
-                    <a className="white size-28" href="/">Make a wish</a>    
+                    <a className="white size-28" href="/wisher">Make a wish</a>    
                     <label className="white beth" htmlFor="email">Email:</label>
                     <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
                     <br/>
