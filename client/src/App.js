@@ -30,7 +30,7 @@ constructor() {
 }
 
 componentDidMount() {
-    this.setState({isLoading: false})
+    setTimeout(()=>{this.setState({isLoading: false})},2000)
 }
 
 

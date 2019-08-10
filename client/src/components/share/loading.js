@@ -7,7 +7,6 @@ class Loading extends React.Component {
 
         return (
            <div class="loading">
-	        <div></div>
             </div>
 	
         );
