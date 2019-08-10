@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import "../share/UIbasics.css";
 import Background from "./background";
-import Homebtn from "./homebtn";
 import Descriptionleft from "./descriptionleft";
 import Descriptionright from "./descriptionright"
-
+import Homebtn from "./homebtn";
 
 class Homepage extends Component {
 

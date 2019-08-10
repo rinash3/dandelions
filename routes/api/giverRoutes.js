@@ -6,11 +6,6 @@ const giverController = require("../../controllers/giverController");
 router.route("/")
   .post(giverController.create);
 
-// Matches with "/api/giver/:id"
-router
-  .route("/:id")
-  .get(giverController.findById)
-  
 
 //matches /api/giver/:email
 router.route("/:email")
