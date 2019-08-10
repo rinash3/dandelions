@@ -75,7 +75,7 @@
     width: 55em;
     border-radius: 50%;
     z-index: 10;
-    top: 7em;
+    top: 3em;
     left: 20%;
     position: absolute;
 }
@@ -94,6 +94,7 @@
 @media screen and (max-width: 800px) {
     .bigCircle{
           left: 5%;
+          top:7em;
         }
 }
 @media screen and (max-width: 510px) {
