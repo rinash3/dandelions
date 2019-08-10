@@ -10,8 +10,6 @@ const Circle = (props) => {
 
     const color = {
         backgroundColor: colors[Math.floor(Math.random() * 5)],
-        height: "15vw",
-        width: "15vw",
         marginBottom: "8vw",
         marginLeft: marginleft[Math.floor(Math.random() * 3)],
         borderRadius: "50%",

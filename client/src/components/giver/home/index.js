@@ -11,10 +11,7 @@ class Giverhome extends Component {
 
 
     render() {
-        const position={
-            marginRight:'30vw',
-            marginTop:'45em'
-        }
+  
         const someMargin={
             marginBottom:'2em'
         }
@@ -32,7 +29,7 @@ class Giverhome extends Component {
                     <label className="white beth" htmlFor="giverEmail">Email:</label>
                     <input id="giverEmail" name="giverEmail" className="white" type="email"></input>
                     <br/><br/>
-                    <Button className="btn" style={position} click={this.click} location="/giver/fills"/>
+                    <Button className="btn" click={this.click} location="/giver/fills"/>
                 </form>
             </div>
         );

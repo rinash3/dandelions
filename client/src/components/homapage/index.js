@@ -12,19 +12,14 @@ class Homepage extends Component {
 
     render() {
        
-        const someMargin={
-            marginLeft:'25%',
-            top:'32em'
-        }
         const moreMargin={
-            marginLeft:'12vw',
-           top:'32em'
+            marginLeft:'12vw'
         }
         return (
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
-                <Homebtn style={someMargin} location="/wisher/" text="Make a wish"/>
+                <Homebtn location="/wisher/" text="Make a wish"/>
                 <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish"/>
 
                 <div className="descrp-container">

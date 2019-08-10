@@ -36,7 +36,7 @@ class Giverfill extends Component {
                 <Background />
                 <a className="maroon size-28" href="..." onClick={this.openProfile}>Profile</a>
                 <ProfilePopup id="ProfilePopup" Close={this.closeProfile} content={this.state.list}>
-                    <table clssName="table maroon">
+                    <table className="table maroon">
                         <thead>
                             <tr>
                                 <th>Object</th>
@@ -54,7 +54,7 @@ class Giverfill extends Component {
 
 
 
-                <div className="giver-formbg container">
+                <div className="giver-formbg">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
                     <Catagory />
@@ -62,7 +62,7 @@ class Giverfill extends Component {
                     <label className="margin-left-5vw white helvatica"
                         htmlFor="objName">Object name:</label>
                     <input className="white"></input>
-                    <br /><br /><br />
+                    <br />
                     <Checkbox />
                     <br />
                     <Button className="btn" style={btn} location="/giver/wishes" />
