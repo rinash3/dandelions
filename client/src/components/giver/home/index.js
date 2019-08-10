@@ -28,7 +28,7 @@ class Giverhome extends Component {
                 if(res.data.password === this.state.password)
                     console.log("You were able to log in!");
                 else
-                    console.log("Incorrect password")
+                    alert("Incorrect password!")
             }
             else{
                 let person={
@@ -57,7 +57,7 @@ class Giverhome extends Component {
                     <label className="white beth" htmlFor="password">Password:</label>
                     <input  onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
                     <br/><br/>
-                    <Button className="btn" style={position} click={this.click} location="/giver/fills"/>
+                    <Button className="btn" style={this.props.position} click={this.click} location="/giver/fills"/>
                 </form>
             </div>
         );

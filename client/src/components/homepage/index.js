@@ -4,14 +4,10 @@ import "../share/UIbasics.css";
 import Background from "./background";
 import Descriptionleft from "./descriptionleft";
 import Descriptionright from "./descriptionright"
-
+import Homebtn from "./homebtn";
 
 class Homepage extends Component {
 
-<<<<<<< HEAD:client/src/components/homepage/index.js
-    render() {
-       
-=======
 
     render() {
        
@@ -23,7 +19,6 @@ class Homepage extends Component {
             marginLeft:'12vw',
            top:'32em'
         }
->>>>>>> 4772e4dd44f01bcc94f51bc4e2fb7552da6f656f:client/src/components/homapage/index.js
         return (
             <div>
                 <div className="logo">Dandelion</div>

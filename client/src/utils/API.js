@@ -22,7 +22,7 @@ export default {
   },
 
   deleteWish: function(id) {
-    return axios.delete("/api/books/" + id);
+    return axios.delete("/api/wishes/" + id);
   },
   updateWish: function(id, updated){
     return axios.put("/api/wishes/"+id,updated)
