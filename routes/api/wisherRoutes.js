@@ -6,12 +6,7 @@ const wisherController = require("../../controllers/wisherController");
 router.route("/")
   .post(wisherController.create);
 
-// Matches with "/api/wisher/:id"
-router
-  .route("/:id")
-  .get(wisherController.findById)
   
-
 //matches /api/wisher/:email
 router.route("/:email")
 .get(wisherController.findOne)

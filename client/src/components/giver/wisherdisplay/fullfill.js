@@ -14,7 +14,9 @@ const position={
 
 }
 return (
+
 <Link style={position} id={props.id} to="/giver/connect">Fullfill wish -></Link>
+
 )
 
 }

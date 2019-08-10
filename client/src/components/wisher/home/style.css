@@ -4,14 +4,14 @@ form {
     position: fixed;
     width: 100%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .black {
     margin-top: -1.5em;
 }
 
-.wisherregbg {
+.wisherhomebg {
     z-index: 1;
     position: fixed;
     top: 0px;
@@ -19,4 +19,9 @@ form {
     width: 100%;
 
 
+}
+
+.next {
+    margin-top: 29%;
+    margin-right: 35%;
 }

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
 import Background from "./background";
-// import Wisherregbg from "./wisherregbg"
-//import sample from './background.mp4';
-// import Button from "../../share/button"
+import API from "../../../utils/API"
+import WisherFill from "../registered"
+
 
 
 class WisherForm extends Component {
@@ -16,7 +16,9 @@ class WisherForm extends Component {
         address: "",
         apt: "",
         city: "",
-        zipCode: ""
+        zipCode: "",
+        account:{},
+        registered:false
     };
 
     handleInputChange = event => {
@@ -28,31 +30,36 @@ class WisherForm extends Component {
             [name]: value
         });
     };
+
     handleFormSubmit = event => {
         event.preventDefault();
-        alert(`Username: ${this.state.username}\nPassword: ${this.state.password}`);
-        this.setState({ username: "", password: "" });
+        let wisher={
+            email:this.state.email,
+            address:this.state.address+" "+this.state.city+" "+this.state.apt+" "+this.state.zipCode,
+            password:this.state.password,
+            name:this.state.firstName+" "+this.state.lastName
+        };
+        console.log(wisher)
+       API.createWisher(wisher).then(res=>{
+           API.getWisher(this.state.email).then(resp=>{
+               this.setState({account:resp.data, registered:true})
+           })      
+       })
     };
 
 
     render() {
+        if(this.state.registered)
+            return <WisherFill account={this.state.account} />
         return (
             <div className="background z-index-upup container">
                 <Background/>
                 <h1>Tell us about you</h1>
                 <br></br>
                 <br></br>
-                <form>
-                    {/* <p>Email: {this.state.email}</p>
-                    <p>Password: {this.state.password}</p>
-                    <p>First Name: {this.state.firstName}</p>
-                    <p>Last Name: {this.state.lastName}</p>
-                    <p>Address: {this.state.address}</p>
-                    <p>Apt: {this.state.apt}</p>
-                    <p>City: {this.state.city}</p>
-                    <p>Zip Code: {this.state.zipCode}</p> */}
+                <form className="wisher">
                     <input
-                        type="text"
+                        type="email"
                         placeholder="Email"
                         name="email"
                         value={this.state.email}
@@ -108,9 +115,9 @@ class WisherForm extends Component {
                         onChange={this.handleInputChange}
                     />
                     <input
-                        type="zipcode"
+                        type="text"
                         placeholder="ZipCode"
-                        name="zipcode"
+                        name="zipCode"
                         value={this.state.zipCode}
                         onChange={this.handleInputChange}
                     />
@@ -121,7 +128,6 @@ class WisherForm extends Component {
                     <button className="black" onClick={this.handleFormSubmit}><h2>Join in -></h2></button>
 
                 </form>
-                {/* <Wisherregbg /> */}
             </div>
 
         )

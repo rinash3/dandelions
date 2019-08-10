@@ -1,10 +1,10 @@
-const db = "../models";
+const db = require("../models");
 
 module.exports = {
   findOne: function(req, res) {
     //find wisher by email, used for seeing if user exists with current email
     db.Wisher
-      .findOne({email:req.body.email})
+      .findOne({email:req.params.email})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
