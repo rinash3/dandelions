@@ -2,8 +2,11 @@ import React from 'react';
 import "../../share/UIbasics.css"
 
 function Print() {
+    const width={
+        width:'8em'
+    }
     return (
-        <div className="print">Print address</div>
+        <div style={width} className="print giver-print-lef">Address</div>
     );
 }
 

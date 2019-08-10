@@ -4,15 +4,17 @@ import "./style.css"
 
 function ContinueBtn(props) {
     const cont={
-        width:"8em",
+        width:"7em",
         padding:"5px 10px",
         background: "#6EC26C",
         borderRadius: "50px",
-        cursor:"pointer"
+        cursor:"pointer",
+        fontSize:'11px',
+        color:'black'
     }
     
     return (
-        <div className="size-18 bold" style={cont}> Print address</div>
+        <div className="bold" style={cont}> Address</div>
     );
 }
 

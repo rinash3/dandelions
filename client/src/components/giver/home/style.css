@@ -1,7 +1,8 @@
 .giverhomepagebg{
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
+    height: auto;
     position: fixed;
     z-index: 1;
 }
@@ -17,7 +18,7 @@
 
 input{
     margin: 1em 1em 1em 1em;
-    width:20vw;
+    width:18em;
 }
 a{
     text-decoration: underline;
@@ -29,7 +30,63 @@ a{
 .btn{
     color:white;
     z-index:10;
+    margin-right:26vw;
+    margin-top:42em;
 }
 label{
     font-family: 'Beth Ellen', cursive;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .hp-form{
+        margin-left: 30%;
+        top:50%;
+    }
+
+    .giverhomepagebg{
+        width:auto;
+        height: 100%;
+    }
+    .btn{
+        margin-top:52em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+
+    .btn{
+        margin-top:50em;
+    }
+    input{
+        width:15em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hp-form{
+        margin-left: 10%;
+        top:50%;
+    }
+
+    .btn{
+        margin-right:50vw;
+    }
+
+  }
+
+@media screen and (max-width: 450px) {
+    .hp-form{
+        margin-left: 10%;
+        top:30%;
+    }
+    .giverhomepagebg{
+        left: -10em;
+    }
+    .btn{
+        margin-top:30em;
+        margin-right:35vw;
+    }
+}  

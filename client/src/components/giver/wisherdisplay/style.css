@@ -1,5 +1,7 @@
 .circle{
     cursor: pointer;
+    height: 13em;
+    width: 13em;
 }
 .circle:hover{
     height: "18vw";
@@ -67,4 +69,47 @@
 .top1em{
     margin-top:1em;
     margin-left:1em;
+}
+.bigCircle{
+    height: 55em;
+    width: 55em;
+    border-radius: 50%;
+    z-index: 10;
+    top: 7em;
+    left: 20%;
+    position: absolute;
+}
+@media screen and (max-width: 1200px) {
+    .circle{
+      height: 8em;
+     width: 8em;
+    }
+    .bigCircle{
+        height: 45em;
+        width: 45em;
+        left: 10%;
+        right: 0%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .bigCircle{
+          left: 5%;
+        }
+}
+@media screen and (max-width: 510px) {
+    .cross{
+        color:white;
+        font-size:60px;
+        right:10px;
+    }
+    .bigCircle{
+        height: 90%;
+        left: 0%;
+        width: 100%;
+        border-radius: 0%;
+    }
+    .circle{
+      height: 6em;
+     width: 6em;
+    }
 }
