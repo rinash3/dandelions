@@ -11,37 +11,37 @@ import Wisherhomebg from "./wisherhomebg"
 
 
 class Wisherhome extends Component {
-    state={
-        email:"",
-        password:"",
-        register:false,
-        registered:false,
-        account:{}
+    state = {
+        email: "",
+        password: "",
+        register: false,
+        registered: false,
+        account: {}
     }
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
-          [name]: value
+            [name]: value
         });
-      };
-    click = event =>{
+    };
+    click = event => {
         event.preventDefault();
         console.log(this.state.email)
-        API.getWisher(this.state.email).then(res=>{
+        API.getWisher(this.state.email).then(res => {
             console.log(res.data);
-            if(res.data){
-                
-                if(res.data.password === this.state.password)
-                    this.setState({registered:true, account:res.data})
+            if (res.data) {
+
+                if (res.data.password === this.state.password)
+                    this.setState({ registered: true, account: res.data })
                 else
                     alert("Incorrect password!")
             }
             else
-                this.setState({register:true})
+                this.setState({ register: true })
         })
     }
     render() {
-        if(this.state.register)
+        if (this.state.register)
             return <WisherForm />
         if (this.state.registered)
             return <WisherFill />
@@ -58,7 +58,7 @@ class Wisherhome extends Component {
                     <label className="black beth" htmlFor="password">Password:</label>
                     <input onChange={this.handleInputChange} id="password" name="password" className="black" type="password"></input>
                     <br /><br />
-                    <Button click={this.click} />
+                    <Button className="next" click={this.click} />
                 </form>
                 <Wisherhomebg />
             </div>
