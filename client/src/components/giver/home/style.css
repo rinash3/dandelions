@@ -1,15 +1,13 @@
 .giverhomepagebg{
     top: 0;
     left: 0;
-    width:100%;
-    height: auto;
+    height:100%;
     position: fixed;
     z-index: 1;
 }
 
 .hp-form{
     position:fixed;
-    top:35%;
     left:0;
     z-index:2;
     margin-left:60%;
@@ -40,13 +38,9 @@ label{
 @media screen and (max-width: 1200px) {
     .hp-form{
         margin-left: 30%;
-        top:50%;
+        top:30%;
     }
 
-    .giverhomepagebg{
-        width:auto;
-        height: 100%;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -59,7 +53,6 @@ label{
 @media screen and (max-width: 768px) {
     .hp-form{
         margin-left: 10%;
-        top:50%;
     }
 
     .btn{

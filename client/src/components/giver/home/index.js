@@ -42,7 +42,9 @@ class Giverhome extends Component {
 
     render() {
 
-
+        const someMargin={
+            marginBottom:'2em'
+        }
         //if account found and password is correct redirect to main page for specified giver
         if (this.state.registered)
             return <Giverfill person={this.state.account} />
@@ -52,20 +54,16 @@ class Giverhome extends Component {
             <div>
                 <Giverhomepagebg />
                 <form className="hp-form">
-
-                    <h1 className="white hp-h1">Fullfill a wish</h1>
-                    <a className="white size-28" href="/">Make a wish</a>    
-                    <label className="white beth" htmlFor="email">Email:</label>
-                    <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
-                    <br/>
-
-                                       <label className="white beth" htmlFor="password">Password:</label>
-                    <input onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
-                    <br /><br />
-
-                    <Button className="btn" style={this.props.position} click={this.click} location="/giver/fills" />
-
-                </form>
+                <h1 style={someMargin} className="white">Fullfill a wish</h1>
+                <a className="white size-28" href="/">Make a wish</a>
+                <label className="white beth" htmlFor="giverName">Name:</label>
+                <input id="giverName" name="giverName" className="white" type="text"></input>
+                <br/>
+                <label className="white beth" htmlFor="giverEmail">Email:</label>
+                <input id="giverEmail" name="giverEmail" className="white" type="email"></input>
+                <br/><br/>
+                <Button className="btn" click={this.click} location="/giver/fills"/>
+            </form>
             </div>
 
         );
