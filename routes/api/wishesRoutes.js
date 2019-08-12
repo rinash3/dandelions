@@ -13,4 +13,6 @@ router
   .put(wishController.update)
   .delete(wishController.remove);
 
+  router.route("/:category").get(wishController.findByCategory);
+
 module.exports = router;

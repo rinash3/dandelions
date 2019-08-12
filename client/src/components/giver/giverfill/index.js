@@ -38,7 +38,7 @@ class Giverfill extends Component {
     
     click = event =>{
         event.preventDefault();
-        
+        API.getWishes
     }
     cat= event=>{
         this.setState({category:event.target.value})
