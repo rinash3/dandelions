@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from "./wisherhome.jpeg"
+import pic from "./home.jpg"
 import "../../wisher/home/style.css"
 
 export default class Wisherhomebg extends React.Component {
