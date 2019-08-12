@@ -9,6 +9,7 @@ import Descriptionright from "./descriptionright"
 
 class Homepage extends Component {
 
+<<<<<<< HEAD
 
     dtWisher = (e) => {
         e.preventDefault();
@@ -21,6 +22,8 @@ class Homepage extends Component {
 
 
 
+=======
+>>>>>>> 30e07fb143d81c68adec8e9630687b23e062c9fb
     render() {
        
         const someMargin={

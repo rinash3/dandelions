@@ -4,7 +4,7 @@ import "../../share/UIbasics.css";
 import Wisherregbg from "./wisherregbg"
 //import sample from './background.mp4';
 // import Background from "./background";
-// import Button from "../../share/button"
+import Button from "../../share/button"
 
 
 
