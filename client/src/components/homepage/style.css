@@ -68,6 +68,11 @@
     padding-right:5em;
     z-index:3;
   }
+  .top-fullFill{
+    font-size: 28px;
+    font-weight: 600;
+  }
+
 
   @media screen and (max-width: 1000px) {
     .homebtn{
