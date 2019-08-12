@@ -16,16 +16,11 @@
     z-index:11;
 }
 
-<<<<<<< HEAD
-.wisherhomebg {
-    z-index: 1; 
-=======
 .wisher-hp{
     z-index: 10;
     width: 100%;
     height: 100%;
     /* text-align: center; */
->>>>>>> c243783c7c58d46e019581a46901b2daa382f135
     position: fixed;
     margin-top: 15em;
     margin-left: 30%;
