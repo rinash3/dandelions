@@ -44,7 +44,7 @@ class Wisherhome extends Component {
         if (this.state.register)
             return <WisherForm />
         if (this.state.registered)
-            return <WisherFill />
+            return <WisherFill account={this.state.account}/>
         return (
 
             < div className="background z-index-upup container" >
