@@ -3,7 +3,7 @@ import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
 import Giverhomepagebg from "./giverhomepagebg"
-// import Giverfill from "../giverfill"
+import Giverfill from "../giverfill"
 import API from "../../../utils/API"
 
 class Giverhome extends Component {
@@ -39,6 +39,7 @@ class Giverhome extends Component {
             }
         })
     }
+
     render() {
 
 
@@ -46,18 +47,19 @@ class Giverhome extends Component {
         if (this.state.registered)
             return <Giverfill person={this.state.account} />
         //else just keep it the page we are on now
-
-
+        else
+        return(
             <div>
-
                 <Giverhomepagebg />
                 <form className="hp-form">
+
                     <h1 className="white hp-h1">Fullfill a wish</h1>
-                    <a className="white size-28" href="/wisher">Make a wish</a>
+                    <a className="white size-28" href="/">Make a wish</a>    
                     <label className="white beth" htmlFor="email">Email:</label>
                     <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
-                    <br />
-                    <label className="white beth" htmlFor="password">Password:</label>
+                    <br/>
+
+                                       <label className="white beth" htmlFor="password">Password:</label>
                     <input onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
                     <br /><br />
 
@@ -68,6 +70,6 @@ class Giverhome extends Component {
 
         );
     }
-}
+    }
 
 export default Giverhome;

@@ -9,6 +9,13 @@ import Homebtn from "./homebtn";
 class Homepage extends Component {
 
 
+    dtWisher = (e) => {
+        e.preventDefault();
+    }
+    dtGiver = (e) => {
+        e.preventDefault();
+    }
+
     render() {
        
         const moreMargin={

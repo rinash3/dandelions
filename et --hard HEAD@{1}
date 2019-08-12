@@ -1,0 +1,22 @@
+[33md3141a0[m[33m ([m[1;36mHEAD -> [m[1;32mBackendstuff[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull origin master: Fast-forward
+[33m0fa7d03[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{1}: checkout: moving from Backendstuf to Backendstuff
+[33m8cdcd27[m[33m ([m[1;32mmaster[m[33m, [m[1;32mBackendstuf[m[33m)[m HEAD@{2}: checkout: moving from master to Backendstuf
+[33m8cdcd27[m[33m ([m[1;32mmaster[m[33m, [m[1;32mBackendstuf[m[33m)[m HEAD@{3}: commit: Added routing
+[33m30e07fb[m[33m ([m[1;31morigin/Backendstuff[m[33m)[m HEAD@{4}: pull origin Backendstuff: Fast-forward
+[33m0fa7d03[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{5}: pull origin master: Fast-forward
+[33m38e1010[m HEAD@{6}: checkout: moving from backendstuff to master
+[33m0fa7d03[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{7}: pull origin master: Fast-forward
+[33mbdc4e77[m HEAD@{8}: checkout: moving from master to backendstuff
+[33m38e1010[m HEAD@{9}: checkout: moving from Backendstuff to master
+[33mbdc4e77[m HEAD@{10}: commit: added mongodb
+[33m67793ae[m HEAD@{11}: commit: added mongodb
+[33md67593c[m[33m ([m[1;31mheroku/Backendstuff[m[33m)[m HEAD@{12}: commit: added mongodb
+[33m1e50ceb[m HEAD@{13}: commit: initial commit
+[33ma04e6d8[m HEAD@{14}: pull origin master: Merge made by the 'recursive' strategy.
+[33m216fab7[m HEAD@{15}: commit: Revised giver routes and combined routes
+[33m2f0e98b[m HEAD@{16}: commit: added the three controllers and routes
+[33m96a7a53[m HEAD@{17}: pull origin master: Merge made by the 'recursive' strategy.
+[33m034ad6a[m HEAD@{18}: pull origin Backendstuff: Fast-forward
+[33m38e1010[m HEAD@{19}: checkout: moving from master to Backendstuff
+[33m38e1010[m HEAD@{20}: commit: added model
+[33ma076363[m HEAD@{21}: clone: from https://github.com/rinash3/dandelions

@@ -6,7 +6,7 @@ function Button() {
 
     return (
 
-        <Link to="/giver/fills" className="z-index beth">Fullfill another wish -></Link>
+    <Link to="/giver/fills" className="z-index beth">Fullfill another wish -></Link> )
 
 }
 
