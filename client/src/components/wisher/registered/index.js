@@ -35,7 +35,7 @@ class Wisherfill extends Component {
                     <textarea className="text margin-left-5vw black helvatica">
                         My prom is in 3 weeks and i need i nice dress </textarea>
                     <div className="margin-left-10vw">
-                        <Button location="/wisher/registered" />
+                        <Button location="/wisher/thankyou" />
                     </div>
                 </div>
             </div>
