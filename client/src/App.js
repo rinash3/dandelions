@@ -12,7 +12,6 @@ import NoMatch from "./components/share/nomatch"
 
 
 import Wisherhome from "./components/wisher/home/index";
-import  Noaccount from "./components/wisher/noAccountWisher";
 import WisherRegister from "./components/wisher/register";
 import WisherRegistered from "./components/wisher/registered";
 
@@ -48,7 +47,6 @@ componentDidMount() {
 
           {/* wisher's module */}
           <Route exact path="/wisher" component={Wisherhome} />
-          <Route exact path="/wisher/creatAccount" component={Noaccount} />
           <Route exact path="/wisher/register" component={WisherRegister} />
           <Route exact path="/wisher/registered" component={WisherRegistered} />
           {/* <Route exact path="/loading" component={Loading} /> */}

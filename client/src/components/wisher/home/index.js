@@ -7,7 +7,7 @@ import WisherFill from "../registered"
 import API from "../../../utils/API"
 import "../../wisher/home/style.css"
 import Wisherhomebg from "./wisherhomebg"
-
+import src from "./paper.png"
 
 
 class Wisherhome extends Component {
@@ -49,9 +49,10 @@ class Wisherhome extends Component {
 
             < div className="background z-index-upup container" >
 
-                <form>
+            <div className="wisher-hp">
+                <form className="wisher-fm">
                     <h1 className="black">Make your wish</h1>
-                    <a className="black" href="/giver">Fullfill a wish</a>
+                    <br/>
                     <label className="black beth" htmlFor="email">Email:</label>
                     <input onChange={this.handleInputChange} id="email" name="email" className="black" type="email"></input>
                     <br />
@@ -60,8 +61,12 @@ class Wisherhome extends Component {
                     <br /><br />
                     <Button className="next" click={this.click} />
                 </form>
+                <img className="wisher-hp-bg" src={src} alt="paper"/>
+                </div>
                 <Wisherhomebg />
+                <a className="black" href="/giver">Fullfill a wish</a>
             </div>
+            
 
         );
     }
