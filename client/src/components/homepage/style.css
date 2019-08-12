@@ -49,7 +49,7 @@
     height:70em;
     display:grid;
     grid-template-columns:repeat(12,1fr);
-    top:80%;
+    top:90%;
   }
   .home-lefthf{
     background:#EB5757;
@@ -68,6 +68,11 @@
     padding-right:5em;
     z-index:3;
   }
+  .top-fullFill{
+    font-size: 28px;
+    font-weight: 600;
+  }
+
 
   @media screen and (max-width: 1000px) {
     .homebtn{
@@ -90,6 +95,7 @@
      padding:.5em .8em;
      font-size: 18px;
      top:20em;
+    left:20%;
     }
     .descrp-container{
       top:50%;

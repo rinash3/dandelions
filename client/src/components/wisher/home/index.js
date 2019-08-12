@@ -64,7 +64,7 @@ class Wisherhome extends Component {
                 <img className="wisher-hp-bg" src={src} alt="paper"/>
                 </div>
                 <Wisherhomebg />
-                <a className="black" href="/giver">Fullfill a wish</a>
+                <a className="black top-fullFill" href="/giver">Fullfill a wish</a>
             </div>
             
 
