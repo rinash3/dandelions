@@ -8,8 +8,8 @@ import Fullfill from "./fullfill"
 
 class Wisherdisplay extends Component {
     state={
-        wishes:[{"name":"hello","object":"milkj bottle","reason":"hjefkanfkn angfdgjh kbvncfd hyjkhbm nvchgfj gh mbn cbf gjfdn sam fam  cd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"}]
-        
+        wishes:[{"name":"hello","object":"milkj bottle","reason":"hjefkanfkn angfdgjh kbvncfd hyjkhbm nvchgfj gh mbn cbf gjfdn sam fam  cd lam"},{"name":"hhihuyu","object":"hbhvhghj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"}]
+
     }
 
     displayInfo=(e)=>{

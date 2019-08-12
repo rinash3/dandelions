@@ -1,14 +1,34 @@
-import React, { Component } from "react"
-import "../../share/UIbasics.css"
-import "./style.css"
-// import Background from "./background"
-import Button from "../../share/button"
-// import Checkbox from "./checkbox.js"
-import Category from "../../share/catagory"
+import React, { Component } from "react";
+import "../../share/UIbasics.css";
+import "./style.css";
+import Button from "../../share/button";
+import Category from "../../share/category";
+import API from "../../../utils/API";
 
 
 class Wisherfill extends Component {
+    state={
+        category:"",
+        name:"",
+        memo:"",
+    }
 
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
+    click= event=>{
+        event.preventDefault();
+        const wish={
+            category:this.state.category,
+            name:this.state.name,
+            memo:this.state.memo,
+            wisherId:this.props.account.email
+        }
+        API.createWish(wish).then(console.log("created wish!"))
+    }
 
     render() {
         return (
@@ -18,24 +38,18 @@ class Wisherfill extends Component {
                     <h1 className="black">What do you wish to have?</h1>
                     <br /><br /><br />
                     <Category />
-                    <br /><br />
+                    <br/>
                     <label className="margin-left-5vw black helvatica"
-                        htmlFor="objName">Object name:</label>
-                    <input className="black"></input>
-                    <br></br>
-                    <label className="margin-left-5vw black helvatica"
-                        htmlFor="objLink">Object link:</label>
-                    <input className="black"></input>
-                    <br />
-                    <br />
-                    <br></br>
-                    <h3 className="margin-left-5vw black helvatica">Tell us a little about why you want it?*</h3>
-                    <br></br>
-                    <br></br>
-                    <textarea className="text margin-left-5vw black helvatica">
-                        My prom is in 3 weeks and i need i nice dress </textarea>
+                       >Object name:</label>
+                    <input className="black" placeholder="Ex: Prom dress" name="name" onChange={this.handleInputChange}></input>
+                    <br/>
+                    <br/>
+                    <h3 className="margin-left-5vw black helvatica">Tell us a little bit about why you want it?*</h3>
+                    <br/>
+                    <textarea className="text margin-left-5vw black helvatica" name="memo" onChange={this.handleInputChange} placeholder="Ex: My prom is in 3 weeks and I need a nice dress">
+                         </textarea>
                     <div className="margin-left-10vw">
-                        <Button location="/wisher/registered" />
+                        <Button location="/wisher/registered" click={this.click} />
                     </div>
                 </div>
             </div>
