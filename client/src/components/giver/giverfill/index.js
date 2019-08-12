@@ -7,6 +7,7 @@ import Category from "../../share/category"
 import Checkbox from "./checkbox.js"
 import ProfilePopup from "./profile.js"
 import ProfileContent from "./profileContent.js"
+import API from "../../../utils/API"
 
 class Giverfill extends Component {
 
