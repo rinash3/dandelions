@@ -23,34 +23,40 @@ class Giverfill extends Component {
     }
 
     render() {
-        const btn={
-            color:'white',
-            marginTop:'10em'
+
+        const btn = {
+            color: 'white',
+            marginTop: '2em',
+            position: 'relative',
+            textAlign: 'left',
+            zIndex:"10",
+            marginLeft:'6em'
+
         }
         return (
             <div >
                 <Background />
                 <a className="maroon size-28" href="..." onClick={this.openProfile}>Profile</a>
                 <ProfilePopup id="ProfilePopup" Close={this.closeProfile} content={this.state.list}>
-                <table clssName="table maroon">
-                    <thead>
-                        <tr>
-                            <th>Object</th>
-                            <th>Person</th>
-                            <th>date</th>
-                            <th>status</th>
-                        </tr>
-                    </thead>
-                    {this.state.list.map((item, i) => {
-                        return <ProfileContent key={i} object={item.object} person={item.person} date={item.date} status={item.status} />
-                    })
-                    }
-                </table>
+                    <table className="table maroon">
+                        <thead>
+                            <tr>
+                                <th>Object</th>
+                                <th>Person</th>
+                                <th>date</th>
+                                <th>status</th>
+                            </tr>
+                        </thead>
+                        {this.state.list.map((item, i) => {
+                            return <ProfileContent key={i} object={item.object} person={item.person} date={item.date} status={item.status} />
+                        })
+                        }
+                    </table>
                 </ProfilePopup>
 
 
 
-                <div className="formbg container">
+                <div className="giver-formbg">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
                     <Catagory />
@@ -61,9 +67,7 @@ class Giverfill extends Component {
                     <br />
                     <Checkbox />
                     <br />
-                   
-                        <Button style={btn} className="margin-left-10vw" location="/giver/wishes"/>
- 
+                    <Button className="btn" style={btn} location="/giver/wishes" />
                 </div>
             </div>
         );

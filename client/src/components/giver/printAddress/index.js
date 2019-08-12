@@ -9,10 +9,13 @@ class PrintAddress extends Component {
 
 
     render() {
+        const page={
+            position:'fixed'
+        }
         return (
-            <div>
+            <div >
                 <Button/>
-                <Background />
+                <Background style={page}/>
                 <Print/>
             </div>
         )

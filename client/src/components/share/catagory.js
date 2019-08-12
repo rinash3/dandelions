@@ -3,7 +3,7 @@ import "./UIbasics.css"
 
 function Catagory() {
     return (
-        <select className="custom-select" name="catagory">
+        <select className="custom-select wisherselect" name="catagory">
             <option value="volvo">Select object catagory</option>
             <option value="Elctro">Electronic devices</option>
             <option value="Clothes">Clothes</option>

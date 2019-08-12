@@ -1,14 +1,9 @@
 import React from 'react';
 import "../share/UIbasics.css"
 import "./style.css"
-import Homebtn from "./homebtn";
 
 function Descriptionleft(props) {
 
-    const white={
-        color:"white",
-        border:'solid 2px white'
-    }
     return (
         
         <div className={props.className}>
@@ -20,7 +15,6 @@ function Descriptionleft(props) {
                             <br />
                 What do you wait? Make a wish!</p>
                 <br/>
-            <Homebtn style={white} location="/wisher/" text="Make a wish" />
         </div>
     )
 }

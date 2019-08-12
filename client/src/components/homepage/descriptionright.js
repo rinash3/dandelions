@@ -1,7 +1,6 @@
 import React from 'react';
 import "../share/UIbasics.css"
 import "./style.css"
-import Homebtn from "./homebtn";
 
 function Descriptionright(props) {
 
@@ -16,7 +15,6 @@ function Descriptionright(props) {
                         <br />
                 Fullfill a wish!</p>
                 <br/>
-            <Homebtn location="/giver/" text="Fullfill wish"/>
         </div>
     )
 }

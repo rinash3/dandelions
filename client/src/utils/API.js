@@ -15,20 +15,19 @@ export default {
     return axios.post("/api/wishers", wishers);
   },
   updateWishlist:function(email,newlist){
-    return axios.put("/api/wishers/"+email, newlist)
+    return axios.put("/api/wishers/"+email,newlist)
   },
-  updateGiverlist:function(email,newlist){
-    return axios.put("/api/givers/"+email, newlist)
+  updateGiverlist:function(email, newlist){
+    return axios.put("/api/givers/"+email,newlist)
   },
 
   deleteWish: function(id) {
     return axios.delete("/api/wishes/" + id);
   },
   updateWish: function(id, updated){
-    return axios.put("/api/wishes/"+id, updated)
+    return axios.put("/api/wishes/"+id,updated)
   },
 
-  // Saves a book to the database
   createWish: function(wish) {
     return axios.post("/api/wishes", wish);
   }

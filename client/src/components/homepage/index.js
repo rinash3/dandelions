@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import "./style.css";
 import "../share/UIbasics.css";
 import Background from "./background";
-import Homebtn from "./homebtn";
 import Descriptionleft from "./descriptionleft";
 import Descriptionright from "./descriptionright"
-
+import Homebtn from "./homebtn";
 
 class Homepage extends Component {
 
-<<<<<<< HEAD
 
     dtWisher = (e) => {
         e.preventDefault();
@@ -18,47 +16,17 @@ class Homepage extends Component {
         e.preventDefault();
     }
 
-
-
-
-
-=======
->>>>>>> 30e07fb143d81c68adec8e9630687b23e062c9fb
     render() {
        
-        const someMargin={
-
-
-            marginLeft:'25%',
-            top:'32em'
-        }
         const moreMargin={
-            marginLeft:'12vw',
-
-            marginLeft:'15em',
-            top:'32em'
-        }
-       
-            marginLeft:'25%',
-            top:'32em'
-        }
-        const moreMargin={
-            marginLeft:'12vw',
-           top:'32em'
+            marginLeft:'12vw'
         }
         return (
             <div>
                 <div className="logo">Dandelion</div>
                 <Background />
-
-
-                <Homebtn style={someMargin} location="/wisher/" text="Make a wish"/>
+                <Homebtn location="/wisher/" text="Make a wish"/>
                 <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish"/>
-
-                <Homebtn style={someMargin} location="/wisher/" text="Make a wish" Click={this.dtWisher} />
-                <Homebtn style={moreMargin} location="/giver/" text="Fullfill a wish" Click={this.dtGiver} />
-
-            
 
                 <div className="descrp-container">
                         <Descriptionleft  className="home-lefthf" />
@@ -70,10 +38,4 @@ class Homepage extends Component {
     }
 }
 
-
-
 export default Homepage;
-
-
-
-
