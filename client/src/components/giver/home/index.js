@@ -35,7 +35,9 @@ class Giverhome extends Component {
                     email: this.state.email,
                     password: this.state.password
                 }
-                API.createGiver(person).then(console.log("Created new person")).then(API.getGiver(this.state.email).then(res=>{
+                API.createGiver(person)
+                .then(console.log("Created new person"))
+                .then(API.getGiver(this.state.email).then(res=>{
                     this.setState({account: res.data, registered:true});
                 }));
             }
