@@ -17,8 +17,8 @@ class WisherForm extends Component {
         apt: "",
         city: "",
         zipCode: "",
-        account:{},
-        registered:false
+        account: {},
+        registered: false
     };
 
     handleInputChange = event => {
@@ -33,28 +33,28 @@ class WisherForm extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        let wisher={
-            email:this.state.email,
-            address:this.state.address+" "+this.state.city+" "+this.state.apt+" "+this.state.zipCode,
-            password:this.state.password,
-            name:this.state.firstName+" "+this.state.lastName
+        let wisher = {
+            email: this.state.email,
+            address: this.state.address + " " + this.state.city + " " + this.state.apt + " " + this.state.zipCode,
+            password: this.state.password,
+            name: this.state.firstName + " " + this.state.lastName
         };
         console.log(wisher)
-       API.createWisher(wisher).then(res=>{
-           API.getWisher(this.state.email).then(resp=>{
-               this.setState({account:resp.data, registered:true})
-           })      
-       })
+        API.createWisher(wisher).then(res => {
+            API.getWisher(this.state.email).then(resp => {
+                this.setState({ account: resp.data, registered: true })
+            })
+        })
     };
 
 
     render() {
-        if(this.state.registered)
+        if (this.state.registered)
             return <WisherFill account={this.state.account} />
         return (
             <div className="background z-index-upup container">
-                <Background/>
-                <h1>Tell us about you</h1>
+                <Background />
+                <h1 className="wisher head">Tell us about you</h1>
                 <br></br>
                 <br></br>
                 <form className="wisher">

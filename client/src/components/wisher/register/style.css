@@ -7,16 +7,23 @@ h1 {
     color: black;
 }
 
-.wisherregbg {
+.wisher {
     z-index: 1;
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: auto;
 
 
 }
 
-.wisher {
-    top: 15%;
+@media only screen and (max-width: 600px) {
+    .wisher {
+        height: auto;
+
+    }
+
+    .black {
+        position: relative;
+    }
 }
