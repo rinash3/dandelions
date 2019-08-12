@@ -23,7 +23,7 @@ class Giverhome extends Component {
         event.preventDefault();
         API.getGiver(this.state.email).then(res => {
             if (res.data) {
-                this.setState({ account: res.data, registered: true })
+                this.setState({ account: res.data, registered: true });
                 console.log(res.data);
                 if (res.data.password === this.state.password)
                     console.log("You were able to log in!");
@@ -35,7 +35,9 @@ class Giverhome extends Component {
                     email: this.state.email,
                     password: this.state.password
                 }
-                API.createGiver(person).then(console.log("Created new person"))
+                API.createGiver(person).then(console.log("Created new person")).then(API.getGiver(this.state.email).then(res=>{
+                    this.setState({account: res.data, registered:true});
+                }));
             }
         })
     }
