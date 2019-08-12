@@ -3,7 +3,7 @@ import "./style.css";
 import "../../share/UIbasics.css";
 import Button from "../../share/button"
 import Giverhomepagebg from "./giverhomepagebg"
-import Giverfill from "../giverfill"
+// import Giverfill from "../giverfill"
 import API from "../../../utils/API"
 
 class Giverhome extends Component {
@@ -42,14 +42,14 @@ class Giverhome extends Component {
     render() {
 
 
-
         //if account found and password is correct redirect to main page for specified giver
         if (this.state.registered)
             return <Giverfill person={this.state.account} />
         //else just keep it the page we are on now
-        return (
+
 
             <div>
+
                 <Giverhomepagebg />
                 <form className="hp-form">
                     <h1 className="white hp-h1">Fullfill a wish</h1>
@@ -65,6 +65,7 @@ class Giverhome extends Component {
 
                 </form>
             </div>
+
         );
     }
 }

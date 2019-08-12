@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import NoMatch from "./pages/NoMatch";
 import Giverhome from "./components/giver/home/index";
@@ -7,6 +7,10 @@ import Wisherdisplay from "./components/giver/wisherdisplay/index";
 import PrintAddress from "./components/giver/printAddress/index";
 
 import Homepage from "./components/homepage/index"
+import Loading from "./components/share/loading"
+import NoMatch from "./components/share/nomatch"
+
+
 import Wisherhome from "./components/wisher/home/index";
 import  Noaccount from "./components/wisher/noAccountWisher";
 import WisherRegister from "./components/wisher/register";
@@ -14,9 +18,29 @@ import WisherRegistered from "./components/wisher/registered";
 
 
 
-function App() {
-  return (
-    <Router>
+
+class App extends Component {
+  state={
+    isLoading:true
+  }
+
+constructor() {
+    super();
+    this.state = { isLoading: true }
+}
+
+componentDidMount() {
+    setTimeout(()=>{this.setState({isLoading: false})},2000)
+}
+
+
+ render(){
+  
+    if(this.state.isLoading===true){
+      return <Loading/>
+    }else{
+      return (
+        <Router>
       <div>
         <Switch>
 
@@ -27,17 +51,20 @@ function App() {
           <Route exact path="/wisher/creatAccount" component={Noaccount} />
           <Route exact path="/wisher/register" component={WisherRegister} />
           <Route exact path="/wisher/registered" component={WisherRegistered} />
+          {/* <Route exact path="/loading" component={Loading} /> */}
 
           {/* giver's modult */}
           <Route exact path="/giver" component={Giverhome} />
           <Route exact path="/giver/fills" component={Giverfill} />
           <Route exact path="/giver/wishes" component={Wisherdisplay} />
           <Route exact path="/giver/connect" component={PrintAddress} />
-          {/* <Route component={NoMatch} /> */}
+          <Route component={NoMatch} />
         </Switch>
       </div>
     </Router>
-  );
+      )
+    }
+    
+ }
 }
-
 export default App;

@@ -31,7 +31,6 @@ a{
     color:white;
     z-index:10;
     margin-right:26vw;
-    margin-top:42em;
 }
 label{
     font-family: 'Beth Ellen', cursive;
@@ -48,18 +47,10 @@ label{
         width:auto;
         height: 100%;
     }
-    .btn{
-        margin-top:52em;
-    }
 }
 
 @media screen and (max-width: 1000px) {
 
-    
-
-    .btn{
-        margin-top:50em;
-    }
     input{
         width:15em;
     }
@@ -86,7 +77,6 @@ label{
         left: -10em;
     }
     .btn{
-        margin-top:30em;
         margin-right:35vw;
     }
 }  

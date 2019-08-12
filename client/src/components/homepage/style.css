@@ -24,7 +24,7 @@
     background: #FFFFFF;
     border: 2px solid #000000;
     box-sizing: border-box;
-    margin-left:30vw;
+    margin-left:36vw;
     border-radius: 50px;
     text-align: center;
     font-size: 21px;
@@ -69,7 +69,11 @@
     z-index:3;
   }
 
-
+  @media screen and (max-width: 1000px) {
+    .homebtn{
+      margin-left:20vw;
+    }
+  }
   @media screen and (max-width: 768px) {
     .home-lefthf{
       grid-column: 1/13;
@@ -82,7 +86,7 @@
       top:10%;
     }
     .homebtn{
-      margin-left:18vw;
+      margin-left:23vw;
      padding:.5em .8em;
      font-size: 18px;
      top:20em;

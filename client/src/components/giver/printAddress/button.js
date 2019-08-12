@@ -7,7 +7,7 @@ function Button() {
     return (
 
         <Link to="/giver/fills" className="z-index beth">Fullfill another wish -></Link>
-    );
+
 }
 
 export default Button;
