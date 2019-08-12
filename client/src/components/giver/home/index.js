@@ -13,6 +13,7 @@ class Giverhome extends Component {
         registered: false,
         account: {}
     }
+
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -23,10 +24,10 @@ class Giverhome extends Component {
         event.preventDefault();
         API.getGiver(this.state.email).then(res => {
             if (res.data) {
-                this.setState({ account: res.data, registered: true });
-                console.log(res.data);
-                if (res.data.password === this.state.password)
+                if (res.data.password === this.state.password){
+                    this.setState({ account: res.data, registered: true });
                     console.log("You were able to log in!");
+                }
                 else
                     alert("Incorrect password!")
             }
@@ -35,11 +36,15 @@ class Giverhome extends Component {
                     email: this.state.email,
                     password: this.state.password
                 }
-                API.createGiver(person)
-                .then(console.log("Created new person"))
-                .then(API.getGiver(this.state.email).then(res=>{
-                    this.setState({account: res.data, registered:true});
-                }));
+                if(this.password){
+                    API.createGiver(person)
+                    .then(console.log("Created new person"))
+                    .then(API.getGiver(this.state.email).then(res=>{
+                        this.setState({account: res.data, registered:true});
+                    }));
+                }
+               else
+                alert("Please enter a password!");
             }
         })
     }
@@ -51,7 +56,7 @@ class Giverhome extends Component {
         }
         //if account found and password is correct redirect to main page for specified giver
         if (this.state.registered)
-            return <Giverfill person={this.state.account} />
+            return <Giverfill account={this.state.account} />
         //else just keep it the page we are on now
         else
         return(
@@ -65,7 +70,7 @@ class Giverhome extends Component {
                     <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
                     <br/>
 
-                                       <label className="white beth" htmlFor="password">Password:</label>
+                    <label className="white beth" htmlFor="password">Password:</label>
                     <input onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
                     <br /><br />
 

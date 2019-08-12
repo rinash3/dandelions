@@ -1,9 +1,9 @@
 import React from "react";
 import "./UIbasics.css"
 
-function Category() {
+function Category(props) {
     return (
-        <select className="custom-select wisherselect" name="category">
+        <select className="custom-select wisherselect" name="category" onChange={props.change}>
             <option value="volvo">Select a category</option>
             <option value="Elctro">Electronic device</option>
             <option value="Clothing">Clothing</option>

@@ -3,7 +3,7 @@ import "../../share/UIbasics.css";
 import "./style.css";
 import Background from "./background";
 import Button from "../../share/button"
-import Catagory from "../../share/category"
+import Category from "../../share/category"
 import Checkbox from "./checkbox.js"
 import ProfilePopup from "./profile.js"
 import ProfileContent from "./profileContent.js"
@@ -11,8 +11,13 @@ import ProfileContent from "./profileContent.js"
 class Giverfill extends Component {
 
     state = {
-        list: [{ "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": false }]
+        list: this.props.account.pastGifts,
+        category:"",
+        name: "",
+        check:false,
+        account: this.props.account.pastGifts
     }
+    
     closeProfile = (e) => {
         e.preventDefault();
         document.getElementById("ProfilePopup").style.display = "none"
@@ -22,6 +27,15 @@ class Giverfill extends Component {
         document.getElementById("ProfilePopup").style.display = "block"
     }
 
+    handleInputChange = event =>{
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    }
+    cat= event=>{
+        this.setState({category:event.target.value})
+    }
     render() {
 
         const btn = {
@@ -59,11 +73,11 @@ class Giverfill extends Component {
                 <div className="giver-formbg">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
-                    <Catagory />
+                    <Category change={this.cat}/>
                     <br /><br />
                     <label className="margin-left-5vw white helvatica"
                         htmlFor="objName">Object name:</label>
-                    <input className="white"></input>
+                    <input className="white" name="name"></input>
                     <br />
                     <Checkbox />
                     <br />
