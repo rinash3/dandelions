@@ -15,7 +15,8 @@ class Giverfill extends Component {
         category:"",
         name: "",
         check:false,
-        account: this.props.account.pastGifts
+        account: this.props.account,
+        wishes:[]
     }
     
     closeProfile = (e) => {
@@ -32,6 +33,11 @@ class Giverfill extends Component {
         this.setState({
             [name]: value
         });
+    }
+    
+    click = event =>{
+        event.preventDefault();
+        
     }
     cat= event=>{
         this.setState({category:event.target.value})
