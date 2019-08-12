@@ -70,14 +70,14 @@
      position: fixed;
      font-family: 'Beth Ellen', cursive;
      font-size:28px;
-     left:40%;
-     top:20em;
+     text-align: center;
+     width:100%;
+     top:53%;
  }
 .print{
     position: fixed;
-    left: 42.36%;
-    right: 43.47%;
-    top:22em;
+    left:42%;
+    top:42%;
     background: #8C1919;
     border: 1px solid #979797;
     box-sizing: border-box;
@@ -94,24 +94,14 @@
 .print:hover{
     transform: scale(1.3)
 }
-@media screen and (max-width: 1000px) {
-    .giver-print-left,.print{
-        left:30%;
-    }
-}
+
 @media screen and (max-width: 770px) {
-    .giver-print-left,.print{
-        left:10%;
-        top:13em;
-    }
     .z-index{
-        top:20em;
-        left:10%;
         font-size: 18px;
     }
 }
 @media screen and (max-width: 500px) {
-    .giver-print-left,.print{
-        left:10%;
+.print{
+        left:20%;
     }
 }
