@@ -30,7 +30,6 @@ class Homepage extends Component {
 
                 <div className="descrp-container">
                         <Descriptionleft  className="home-lefthf" />
-                    
                         <Descriptionright className="home-righthf"/>
                 </div>
             </div>
