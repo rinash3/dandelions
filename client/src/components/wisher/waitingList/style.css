@@ -9,6 +9,11 @@
     left:30%;
     top:50%;
 }
+.ty-edit{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
 
 @media only screen and (max-width: 768px) {
     .paper{
