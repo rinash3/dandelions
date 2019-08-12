@@ -8,7 +8,8 @@ form {
 }
 
 .black {
-    margin-top: -1.5em;
+    margin-top: -0.2em;
+
 }
 
 .wisherhomebg {
@@ -16,12 +17,34 @@ form {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: auto;
 
 
 }
 
 .next {
-    margin-top: 29%;
-    margin-right: 35%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wisherhomebg {
+
+        width: auto;
+        height: 100%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wisherhomebg {
+
+        width: auto;
+        height: 100%;
+    }
+
+
 }

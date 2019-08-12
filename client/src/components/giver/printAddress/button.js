@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 function Button() {
 
     return (
-        <Link to="/giver/fills" className="z-index beth giver-print-left">Fullfill another wish -></Link>
-    );
+
+        <Link to="/giver/fills" className="z-index beth">Fullfill another wish -></Link>
+
 }
 
 export default Button;
