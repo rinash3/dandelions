@@ -13,6 +13,7 @@ class Giverfill extends Component {
     state = {
         list: [{ "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": false }]
     }
+    
     closeProfile = (e) => {
         e.preventDefault();
         document.getElementById("ProfilePopup").style.display = "none"
