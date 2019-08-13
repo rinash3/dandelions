@@ -8,6 +8,7 @@ import Checkbox from "./checkbox.js"
 import ProfilePopup from "./profile.js"
 import ProfileContent from "./profileContent.js"
 import API from "../../../utils/API"
+import Wisherdisplay from "../wisherdisplay";
 
 class Giverfill extends Component {
 
@@ -38,7 +39,10 @@ class Giverfill extends Component {
     
     click = event =>{
         event.preventDefault();
-        API.getWishes
+        API.getWishes(this.state.category).then(res=>{
+            this.setState({wishes:res.data});
+            console.log("Found wishes!")
+        });
     }
     cat= event=>{
         this.setState({category:event.target.value})
@@ -54,7 +58,11 @@ class Giverfill extends Component {
             marginLeft:'6em'
 
         }
-        return (
+        if(this.state.wishes.length >0)
+            return <Wisherdisplay wishes={this.state.wishes}/>
+        else
+        return(
+            
             <div >
                 <Background />
                 <a className="maroon size-28" href="..." onClick={this.openProfile}>Profile</a>
@@ -88,10 +96,9 @@ class Giverfill extends Component {
                     <br />
                     <Checkbox />
                     <br />
-                    <Button className="btn" style={btn} location="/giver/wishes" />
+                    <Button className="btn" style={btn} click={this.click}/>
                 </div>
-            </div>
-        );
+            </div>);
     }
 }
 export default Giverfill;
