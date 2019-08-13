@@ -12,9 +12,10 @@ class PrintAddress extends Component {
         const page={
             position:'fixed'
         }
+        console.log(this.props.account)
         return (
             <div >
-                <Button/>
+                <Button account={this.props.account}/>
                 <Background style={page}/>
                 <Print/>
             </div>

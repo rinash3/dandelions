@@ -5,12 +5,14 @@ import Button from "../../share/button";
 import Category from "../../share/category";
 import API from "../../../utils/API";
 import Background from "./background";
+import WaitingList from "../waitingList"
 
 class Wisherfill extends Component {
     state={
         category:"",
         name:"",
         memo:"",
+        waiting:false,
     }
 
     handleInputChange = event => {
@@ -29,7 +31,8 @@ class Wisherfill extends Component {
             wisherName:this.props.account.name,
             status:false
         }
-        API.createWish(wish).then(console.log("created wish!"))
+        API.createWish(wish).then(
+        this.setState({waiting:true}))
     }
 
     cat = event=>{
@@ -37,6 +40,9 @@ class Wisherfill extends Component {
     }
 
     render() {
+        if(this.state.waiting)
+        return <WaitingList account={this.props.account} />
+        else
         return (
             <div >
                 <Background />

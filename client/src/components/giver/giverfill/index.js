@@ -59,7 +59,7 @@ class Giverfill extends Component {
 
         }
         if(this.state.wishes.length >0)
-            return <Wisherdisplay wishes={this.state.wishes}/>
+            return <Wisherdisplay account={this.state.account} wishes={this.state.wishes}/>
         else
         return(
             
