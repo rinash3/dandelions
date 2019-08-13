@@ -8,7 +8,7 @@ router.route("/")
 
 // Matches with "/api/wishes /:id"
 router
-  .route("/:id")
+  .route("/:email")
   .get(wishController.findById)
   .put(wishController.update)
   .delete(wishController.remove);

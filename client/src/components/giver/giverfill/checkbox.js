@@ -6,7 +6,7 @@ function Checkbox() {
         <div className="margin-left-5vw pretty p-default p-fill">
         <input type="checkbox" />
         <div className="state p-danger">
-            <label className="white size-11">Once you choose to donate, object won't be retrieved in 3 monthes</label>
+            <label className="white size-11">Once you choose to donate, object won't be retrieved in 3 months</label>
         </div>
     </div>
     );
