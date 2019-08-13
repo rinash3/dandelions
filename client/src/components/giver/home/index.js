@@ -62,7 +62,9 @@ class Giverhome extends Component {
         return(
             <div>
                 <Giverhomepagebg />
+                
                 <form className="hp-form">
+
 
                     <h1 className="white hp-h1">Fullfill a wish</h1>
                     <a className="white size-28" href="/wisher">Make a wish</a>    
@@ -77,6 +79,7 @@ class Giverhome extends Component {
                     <Button className="btn" style={this.props.position} click={this.click} location="/giver/fills" />
 
                 </form>
+
             </div>
 
         );

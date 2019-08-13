@@ -50,7 +50,7 @@ class Wisherdisplay extends Component {
             <h1 className="maroon top1em">Choose one wish to fullfill</h1>
             <br/>
             {this.state.wishes.map((element,i)=> {
-              return <Circle k={i} key={i} class="circle" MouseEnter={this.displayInfo} MouseMove={this.mouseMove} MouseLeave={this.closeInfo} Click={this.bigCircle}/>
+              return <Circle k={i} key={i} class="circle animated zoomIn" MouseEnter={this.displayInfo} MouseMove={this.mouseMove} MouseLeave={this.closeInfo} Click={this.bigCircle}/>
             })
             }
             <InfoBox/>

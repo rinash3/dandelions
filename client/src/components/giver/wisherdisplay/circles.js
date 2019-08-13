@@ -5,16 +5,36 @@ import "../../share/UIbasics.css";
 
 const Circle = (props) => {
     var colors = ["#852D2D", "#6CC2BE", "#7D7AA2", "#B90000", "#E9B3B3"]
-    var positions = ["translateY(2vw)", "translateY(4vw)", "translateY(6vw)", "translateY(8vw)", "translateY(10vw)"]
-    var marginleft = ["1vw", "2vw", "4vw"]
-
+    var selected = [];
+    
+    for (var j=0; j<props.k; j++) {
+        while (true) {
+            var x0 = 50+Math.floor(Math.random() * (window.innerWidth-300));
+            var y0 =300+ Math.floor(Math.random() * (window.innerHeight-600));
+            var x1 = x0 + 250;
+            var y1 = y0 + 250;
+            var i = 0;
+            while (i < selected.length &&
+                   (x0 >= selected[i].x1 ||
+                    y0 >= selected[i].y1 ||
+                    x1 <= selected[i].x0 ||
+                    y1 <= selected[i].y0)) {
+                i++;
+            }
+            if (i === selected.length) {
+                selected.push({x0:x0, y0:y0, x1:x1, y1:y1});
+                break;
+            }
+        }
+    }
     const color = {
         backgroundColor: colors[Math.floor(Math.random() * 5)],
-        marginBottom: "8vw",
-        marginLeft: marginleft[Math.floor(Math.random() * 3)],
+        position:'absolute',
         borderRadius: "50%",
         display: "inline-block",
-        transform: positions[Math.floor(Math.random() * 5)]
+        left:x0+'px',
+        top:y0+"px",
+        border:'solid'
     }
 
     return (

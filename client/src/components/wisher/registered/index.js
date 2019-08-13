@@ -56,6 +56,7 @@ class Wisherfill extends Component {
                          </textarea>
                     <div className="margin-left-10vw">
                         <Button click={this.click} />
+
                     </div>
                 </div>
             </div>
