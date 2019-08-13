@@ -15,7 +15,7 @@ function ProfilePopup(props) {
     
 
     return (
-        <div className="ProfilePopup" style={none} id={props.id}>
+        <div className="ProfilePopup animated zoomIn" style={none} id={props.id}>
             <div className="cross-for-profile"  onClick={props.Close}>X</div>
             <h1 style={space}>Profile</h1>
             <form className="ty-edit">

@@ -57,7 +57,7 @@ class Giverfill extends Component {
 
 
 
-                <div className="giver-formbg">
+                <div className="giver-formbg animated fadeInUp">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
                     <Catagory />

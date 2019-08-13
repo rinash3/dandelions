@@ -9,10 +9,10 @@ const Circle = (props) => {
     
     for (var j=0; j<props.k; j++) {
         while (true) {
-            var x0 = Math.floor(Math.random() * (window.innerWidth-300));
-            var y0 =300+ Math.floor(Math.random() * (window.innerHeight-300));
-            var x1 = x0 + 400;
-            var y1 = y0 + 400;
+            var x0 = 50+Math.floor(Math.random() * (window.innerWidth-300));
+            var y0 =300+ Math.floor(Math.random() * (window.innerHeight-600));
+            var x1 = x0 + 250;
+            var y1 = y0 + 250;
             var i = 0;
             while (i < selected.length &&
                    (x0 >= selected[i].x1 ||

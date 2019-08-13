@@ -51,20 +51,20 @@ class Wisherhome extends Component {
 
             <div className="wisher-hp">
                 <form className="wisher-fm">
-                    <h1 className="black">Make your wish</h1>
+                    <h1 className="black animated fadeInUp">Make your wish</h1>
                     <br/>
-                    <label className="black beth" htmlFor="email">Email:</label>
-                    <input onChange={this.handleInputChange} id="email" name="email" className="black" type="email"></input>
+                    <label className="black beth animated fadeInUp" htmlFor="email">Email:</label>
+                    <input onChange={this.handleInputChange} id="email" name="email" className="black animated fadeInUp" type="email"></input>
                     <br />
-                    <label className="black beth" htmlFor="password">Password:</label>
-                    <input onChange={this.handleInputChange} id="password" name="password" className="black" type="password"></input>
+                    <label className="black beth animated fadeInUp" htmlFor="password">Password:</label>
+                    <input onChange={this.handleInputChange} id="password" name="password" className="black animated fadeInUp" type="password"></input>
                     <br /><br />
-                    <Button className="next" click={this.click} />
+                    <Button className="next animated fadeInUp" click={this.click} />
                 </form>
                 <img className="wisher-hp-bg" src={src} alt="paper"/>
                 </div>
                 <Wisherhomebg />
-                <a className="black top-fullFill" href="/giver">Fullfill a wish</a>
+                <a className="black top-fullFill animated fadeInUp" href="/giver">Fullfill a wish</a>
             </div>
             
 
