@@ -29,6 +29,11 @@ export default {
   },
 
   createWish: function(wish) {
-    return axios.post("/api/wishes", wish);
+    console.log(wish);
+    return axios.post("/api/wishes/", wish);
+  },
+  getWishes: function(category){
+    console.log(category);
+    return axios.get("/api/wishes/"+category);
   }
 };

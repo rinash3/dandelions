@@ -12,7 +12,6 @@ function ProfilePopup(props) {
         display:"none"
     }
 
-    console.log(props)
     return (
         <div className="ProfilePopup" style={none} id={props.id}>
             <div className="cross-for-profile"  onClick={props.Close}>X</div>
