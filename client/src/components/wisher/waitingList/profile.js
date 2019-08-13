@@ -24,9 +24,9 @@ function ProfilePopup(props) {
                         name="email"
                         value={props.email}
                     />
-
+                <label>Current Password:</label>
                     <input
-                        type="text"
+                        type="password"
                         name="password"
                         value={props.password}
                     />
@@ -37,11 +37,6 @@ function ProfilePopup(props) {
                         name="firstName"
                         value={props.firstName}
                     />
-                    <input
-                        type="lastName"
-                        name="lastName"
-                        value={props.lastName}
-                    />
                     <br></br>
                     <br></br>
                     <input
@@ -49,23 +44,17 @@ function ProfilePopup(props) {
                         name="address"
                         value={props.address}
                     />
-                    <input
-                        type="apt"
-                        name="apt"
-                        value={props.apt}
-                    />
+                   
                     <br></br>
-                    <br></br>
+                    <label>New Password:</label>
                     <input
-                        type="city"
-                        name="city"
-                        value={props.city}
+                        type="password"
+                        name="npass"
                     />
+                    <label>Confirm new Password:</label>
                     <input
-                        type="text"
-                        name="zipCode"
-                        value={props.zipCode}
-                        
+                        type="password"
+                        name="cpass"                        
                     />
                     <br></br>
                     <br></br>

@@ -5,12 +5,13 @@ import Circle from "./circles";
 import InfoBox from "./infoBox";
 import BigCircle from "./bigCircle";
 import Fullfill from "./fullfill"
-
+import {Redirect} from "react-router-dom"
 class Wisherdisplay extends Component {
     state={
         //wisherName objectName memo
-        wishes:this.props.wishes
-
+        wishes:this.props.wishes,
+        fulfilled:false,
+        number:-1
     }
 
     displayInfo=(e)=>{
@@ -34,7 +35,9 @@ class Wisherdisplay extends Component {
         document.getElementById("theOneBG").style.display="block";
         document.getElementById("fullfill").style.display="block";
         document.getElementById("theOne").style.backgroundColor=e.target.style.backgroundColor;
-        document.getElementById("contentC").innerHTML="<div class='contentC'><h1 class='white'>You choose "+this.state.wishes[e.target.id].wisherName+"</h1><br/><h3>Object: "+this.state.wishes[e.target.id].name+"</br>"+this.state.wishes[e.target.id].memo+"</h3></br></br> <p>	Once you confirm, we will send you detailed shipping information. You can print out the form and ship it via UPS or Fedex for free.</br> After you ship the gift, you will receive a lottery numberat the shipping store. Enter it number and see what you will get. We offer a 7 day European trip to 3 people every month.</p></div>";
+        document.getElementById("contentC").innerHTML="<div class='contentC'><h1 class='white'>You choose "+this.state.wishes[e.target.id].wisherName+"</h1><br/><h3>Object: "+this.state.wishes[e.target.id].name+"</br>"+this.state.wishes[e.target.id].memo+
+        "</h3></br></br> <p>	Once you confirm, we will send you detailed shipping information. You can print out the form and ship it via UPS or Fedex for free.</br> After you ship the gift, you will receive a lottery numberat the shipping store. Enter it number and see what you will get. We offer a 7 day European trip to 3 people every month.</p></div>";
+        this.state.number=parseFloat(e.target.id);
     }
 
     closeC=(e)=>{
@@ -43,8 +46,16 @@ class Wisherdisplay extends Component {
         document.getElementById("theOneBG").style.display="none";
         document.getElementById("fullfill").style.display="none";
     }
+    
+    click= e=>{
+        const giver=this.props.account;
+        giver.pastGifts.push()
+        this.setState({fulfilled:true})
+    }
 
     render() {
+        if(this.state.fulfilled)
+            return <Redirect to={{pathname:"/giver/connect", state:{account:this.props.account}}} />
         return (
         <div>
             <h1 className="maroon top1em">Choose one wish to fullfill</h1>
@@ -55,7 +66,7 @@ class Wisherdisplay extends Component {
             }
             <InfoBox/>
             <BigCircle closeC={this.closeC} id="theOne"/>
-            <Fullfill id="fullfill"/>
+            <Fullfill id="fullfill" content={this.props.number} click={this.click}/>
         </div>
         )
     }
