@@ -12,8 +12,6 @@ function ProfilePopup(props) {
         display:"none"
     }
 
-    
-
     return (
         <div className="ProfilePopup animated zoomIn" style={none} id={props.id}>
             <div className="cross-for-profile"  onClick={props.Close}>X</div>
