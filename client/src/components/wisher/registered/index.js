@@ -34,7 +34,7 @@ class Wisherfill extends Component {
         return (
             <div >
                 <Background />
-                <div className="formbg container">
+                <div className="formbg container animated fadeInUp">
                     <h1 className="black">What do you wish to have?</h1>
                     <br />
                     <p>Make your wish, so givers can see. The more appealing your story is, the greater chance your wish will be fullfilled. But be careful, you can only make one wish at once.</p><br />
