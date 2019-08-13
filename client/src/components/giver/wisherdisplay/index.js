@@ -55,12 +55,9 @@ class Wisherdisplay extends Component {
 
 
     render() {
-<<<<<<< HEAD
+        let used=[];
         if(this.state.fulfilled)
             return <Redirect to={{pathname:"/giver/connect", state:{account:this.props.account}}} />
-=======
-        let used=[];
->>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
         return (
         <div>
             <h1 className="maroon top1em">Choose one wish to fullfill</h1>

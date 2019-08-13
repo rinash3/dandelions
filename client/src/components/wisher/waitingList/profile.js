@@ -28,11 +28,6 @@ function ProfilePopup(props) {
                         name="email"
                         value={props.email}
                     />
-<<<<<<< HEAD
-                <label>Current Password:</label>
-                    <input
-                        type="password"
-=======
                 </label>
 
                 <label>password
@@ -40,7 +35,6 @@ function ProfilePopup(props) {
                 <input
                         style={input}
                         type="text"
->>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
                         name="password"
                         value={props.password}
                     />
@@ -55,11 +49,6 @@ function ProfilePopup(props) {
                         name="firstName"
                         value={props.firstName}
                     />
-<<<<<<< HEAD
-                    <br></br>
-                    <br></br>
-                    <input
-=======
                 </label>
 
                 <label>last name
@@ -77,24 +66,10 @@ function ProfilePopup(props) {
                 <br />
                 <input
                         style={input}
->>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
                         type="address"
                         name="address"
                         value={props.address}
                     />
-<<<<<<< HEAD
-                   
-                    <br></br>
-                    <label>New Password:</label>
-                    <input
-                        type="password"
-                        name="npass"
-                    />
-                    <label>Confirm new Password:</label>
-                    <input
-                        type="password"
-                        name="cpass"                        
-=======
                 </label>
                 <label>apt no.
                 <br />
@@ -124,7 +99,6 @@ function ProfilePopup(props) {
                         name="zipCode"
                         value={props.zipCode}
 
->>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
                     />
                 </label>
                 <br></br>

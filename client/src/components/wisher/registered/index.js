@@ -4,11 +4,8 @@ import "./style.css";
 import Button from "../../share/button";
 import Category from "../../share/category";
 import API from "../../../utils/API";
-<<<<<<< HEAD
-import WaitingList from "../waitingList"
-=======
 import Background from "./background";
->>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
+import WaitingList from "../waitingList"
 
 class Wisherfill extends Component {
     state={
