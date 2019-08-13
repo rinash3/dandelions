@@ -9,7 +9,7 @@ import Fullfill from "./fullfill"
 class Wisherdisplay extends Component {
     state={
         //wisherName objectName memo
-        wishes:[{"name":"hello","object":"milkj bottle","reason":"hjefkanfkn angfdgjh kbvncfd hyjkhbm nvchgfj gh mbn cbf gjfdn sam fam  cd lam"},{"name":"hhihuyu","object":"hbhvhghj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"},{"name":"hello","object":"milkj bottle","reason":"hje f k a nfkna nfd nsa mfa mcd lam"}]
+        wishes:this.props.wishes
 
     }
 
@@ -22,7 +22,7 @@ class Wisherdisplay extends Component {
         e.preventDefault();
         document.getElementById("infoBox").style.left=(e.clientX-120)+"px";
         document.getElementById("infoBox").style.top=(e.clientY-150)+"px";
-        document.getElementById("infoBox").innerHTML="<p> Name: <span class='bold'>"+this.state.wishes[e.target.id].name+"</span><br/>Object:<span class='bold'>"+this.state.wishes[e.target.id].object+"<br/>"+this.state.wishes[e.target.id].reason+"</span></p>";
+        document.getElementById("infoBox").innerHTML="<p> Name: <span class='bold'>"+this.state.wishes[e.target.id].wisherName+"</span><br/>Object:<span class='bold'>"+this.state.wishes[e.target.id].name+"<br/>"+this.state.wishes[e.target.id].memo+"</span></p>";
     }
     closeInfo=(e)=>{
         e.preventDefault();
@@ -34,7 +34,7 @@ class Wisherdisplay extends Component {
         document.getElementById("theOneBG").style.display="block";
         document.getElementById("fullfill").style.display="block";
         document.getElementById("theOne").style.backgroundColor=e.target.style.backgroundColor;
-        document.getElementById("contentC").innerHTML="<div class='contentC'><h1 class='white'>You choose "+this.state.wishes[e.target.id].name+"</h1><br/><h3>Object: "+this.state.wishes[e.target.id].object+"</br>"+this.state.wishes[e.target.id].reason+"</h3></br></br> <p>	Once you confirm, we will send you detailed shipping information. You can print out the form and ship it via UPS or Fedex for free.</br> After you ship the gift, you will receive a lottery numberat the shipping store. Enter it number and see what you will get. We offer a 7 day European trip to 3 people every month.</p></div>";
+        document.getElementById("contentC").innerHTML="<div class='contentC'><h1 class='white'>You choose "+this.state.wishes[e.target.id].wisherName+"</h1><br/><h3>Object: "+this.state.wishes[e.target.id].name+"</br>"+this.state.wishes[e.target.id].memo+"</h3></br></br> <p>	Once you confirm, we will send you detailed shipping information. You can print out the form and ship it via UPS or Fedex for free.</br> After you ship the gift, you will receive a lottery numberat the shipping store. Enter it number and see what you will get. We offer a 7 day European trip to 3 people every month.</p></div>";
     }
 
     closeC=(e)=>{
