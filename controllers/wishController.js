@@ -5,7 +5,7 @@ module.exports = {
   //finds wish by id
   findById: function(req, res) {
     db.Wish
-      .findById(req.params.id)
+      .findById(req.params.email)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

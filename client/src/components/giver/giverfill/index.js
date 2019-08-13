@@ -3,7 +3,7 @@ import "../../share/UIbasics.css";
 import "./style.css";
 import Background from "./background";
 import Button from "../../share/button"
-import Catagory from "../../share/catagory"
+import Catagory from "../../share/category"
 import Checkbox from "./checkbox.js"
 import ProfilePopup from "./profile.js"
 import ProfileContent from "./profileContent.js"

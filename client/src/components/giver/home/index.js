@@ -23,7 +23,7 @@ class Giverhome extends Component {
         event.preventDefault();
         API.getGiver(this.state.email).then(res => {
             if (res.data) {
-                this.setState({ account: res.data, registered: true })
+                this.setState({ account: res.data, registered: true });
                 console.log(res.data);
                 if (res.data.password === this.state.password)
                     console.log("You were able to log in!");
@@ -35,7 +35,11 @@ class Giverhome extends Component {
                     email: this.state.email,
                     password: this.state.password
                 }
-                API.createGiver(person).then(console.log("Created new person"))
+                API.createGiver(person)
+                .then(console.log("Created new person"))
+                .then(API.getGiver(this.state.email).then(res=>{
+                    this.setState({account: res.data, registered:true});
+                }));
             }
         })
     }
@@ -55,16 +59,22 @@ class Giverhome extends Component {
                 <Giverhomepagebg />
                 
                 <form className="hp-form">
-                <a className="white size-28" href="/">Make a wish</a>
-                <h1 style={someMargin} className="white animated fadeInUp">Fullfill a wish</h1>
-                <label className="white beth animated fadeInUp" htmlFor="giverName">Name:</label>
-                <input id="giverName" name="giverName" className="white animated fadeInUp" type="text"></input>
-                <br/>
-                <label className="white beth animated fadeInUp" htmlFor="giverEmail">Email:</label>
-                <input id="giverEmail" name="giverEmail" className="white animated fadeInUp" type="email"></input>
-                <br/><br/>
-                <Button className="btn animated fadeInUp" click={this.click} location="/giver/fills"/>
-            </form>
+
+
+                    <h1 className="white hp-h1">Fullfill a wish</h1>
+                    <a className="white size-28" href="/wisher">Make a wish</a>    
+                    <label className="white beth" htmlFor="email">Email:</label>
+                    <input onChange={this.handleInputChange} id="giverEmail" name="email" className="white" type="email"></input>
+                    <br/>
+
+                                       <label className="white beth" htmlFor="password">Password:</label>
+                    <input onChange={this.handleInputChange} id="giverPassword" name="password" className="white" type="password"></input>
+                    <br /><br />
+
+                    <Button className="btn" style={this.props.position} click={this.click} location="/giver/fills" />
+
+                </form>
+
             </div>
 
         );
