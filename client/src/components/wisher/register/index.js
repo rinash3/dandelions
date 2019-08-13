@@ -54,11 +54,15 @@ class WisherForm extends Component {
         return (
             <div className="background z-index-upup container">
                 <Background />
-                <h1 className="wisher head">Tell us about you</h1>
+               
                 <br></br>
                 <br></br>
                 <form className="wisher-register">
-
+                <h1 className="wisher head">Tell us about you</h1>
+                <br/>
+                <p>Givers will need following information to send your gift to you. 
+                    <br/>Don't let them be someone else's: )</p>
+                    <br/>
                     <input
                         type="email"
                         placeholder="Email"

@@ -4,7 +4,7 @@ import "./style.css";
 import Button from "../../share/button";
 import Category from "../../share/category";
 import API from "../../../utils/API";
-
+import Background from "./background";
 
 class Wisherfill extends Component {
     state={
@@ -33,10 +33,11 @@ class Wisherfill extends Component {
     render() {
         return (
             <div >
-                {/* <Background /> */}
+                <Background />
                 <div className="formbg container">
                     <h1 className="black">What do you wish to have?</h1>
-                    <br /><br /><br />
+                    <br />
+                    <p>Make your wish, so givers can see. The more appealing your story is, the greater chance your wish will be fullfilled. But be careful, you can only make one wish at once.</p><br />
                     <Category />
                     <br/>
                     <label className="margin-left-5vw black helvatica"
