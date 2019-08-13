@@ -25,9 +25,15 @@ class Wisherfill extends Component {
             category:this.state.category,
             name:this.state.name,
             memo:this.state.memo,
-            wisherId:this.props.account.email
+            wisherId:this.props.account.email,
+            wisherName:this.props.account.name,
+            status:false
         }
         API.createWish(wish).then(console.log("created wish!"))
+    }
+
+    cat = event=>{
+        this.setState({category:event.target.value});
     }
 
     render() {
@@ -37,7 +43,7 @@ class Wisherfill extends Component {
                 <div className="formbg container">
                     <h1 className="black">What do you wish to have?</h1>
                     <br /><br /><br />
-                    <Category />
+                    <Category change={this.cat} />
                     <br/>
                     <label className="margin-left-5vw black helvatica"
                        >Object name:</label>
@@ -49,8 +55,7 @@ class Wisherfill extends Component {
                     <textarea className="text margin-left-5vw black helvatica" name="memo" onChange={this.handleInputChange} placeholder="Ex: My prom is in 3 weeks and I need a nice dress">
                          </textarea>
                     <div className="margin-left-10vw">
-
-                        <Button location="/wisher/thankyou" />
+                        <Button click={this.click} />
 
                     </div>
                 </div>
