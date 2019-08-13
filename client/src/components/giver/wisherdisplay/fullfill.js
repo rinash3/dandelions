@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import "../../share/UIbasics.css";
-import { Link } from "react-router-dom";
 
 const Fullfill = (props) => {
 
@@ -15,7 +14,7 @@ const position={
 }
 return (
 
-<Link style={position} id={props.id} to="/giver/connect">Fullfill wish -></Link>
+<button style={position} id={props.id} onClick={props.click}>Fullfill wish -></button>
 
 )
 
