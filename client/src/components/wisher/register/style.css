@@ -7,29 +7,33 @@ h1 {
     color: black;
 }
 
-.wisher {
+.wisher-register {
     z-index: 1;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 10em;
+    left: 20%;
+    padding:5em 10em 5em 10em;
     height: auto;
+    background:white;
+}
 
 
+@media only screen and (max-width: 808px) {
+    .formbg {
+        margin-top: 20%;
+    }
+    .wisher-register {
+        left:5%;
+        top:2em;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .wisher {
-        height: auto;
-
+    .wisher-register {
+        left:0;
     }
 
     .black {
         position: relative;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .formbg {
-        margin-top: 20%;
     }
 }

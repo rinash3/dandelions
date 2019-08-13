@@ -53,15 +53,41 @@ class Wisherdisplay extends Component {
         this.setState({fulfilled:true})
     }
 
+
     render() {
+<<<<<<< HEAD
         if(this.state.fulfilled)
             return <Redirect to={{pathname:"/giver/connect", state:{account:this.props.account}}} />
+=======
+        let used=[];
+>>>>>>> b50c686c37f2362c2efc28b8bb38494a7b589b3d
         return (
         <div>
             <h1 className="maroon top1em">Choose one wish to fullfill</h1>
             <br/>
-            {this.state.wishes.map((element,i)=> {
-              return <Circle k={i} key={i} class="circle animated zoomIn" MouseEnter={this.displayInfo} MouseMove={this.mouseMove} MouseLeave={this.closeInfo} Click={this.bigCircle}/>
+            {   
+                this.state.wishes.map((element,i)=> {
+                let y=Math.random()*(window.innerHeight-200)+100;
+                let x=Math.random()*(window.innerWidth-200)-200;
+                let y1=y+1;
+                let x1=x+1;
+                // console.log('fine');
+                    if(used.length===0){
+                        used.push({x,y,x1,y1});
+                        console.log('fine');
+                     }
+                    else{
+                        for(let j = 0; j < used.length; j++){
+                            while((x>used[j].x&&x < used[j].x1) || (y>used[j].y && y < used[j].y1)){
+                                x+=5;
+                                y+=5;
+                        }
+                    }
+                    used.push({x,y,x1,y1});
+                    
+                }
+
+              return <Circle k={i} top={y} left={x} key={i} class="circle animated zoomIn" MouseEnter={this.displayInfo} MouseMove={this.mouseMove} MouseLeave={this.closeInfo} Click={this.bigCircle}/>
             })
             }
             <InfoBox/>
