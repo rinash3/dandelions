@@ -1,37 +1,40 @@
-.wisher-hp-bg{
+.wisher-hp-bg {
     position: absolute;
     top: -30px;
     left: -40px;
     z-index: 8;
     width: 50em;
 }
-.wisher-fm{
+
+.wisher-fm {
     z-index: 11;
     position: absolute;
     top: 140px;
     left: 140px;
-    width:100%;
-}
-.wisher-z-index-11{
-    z-index:11;
+    width: 100%;
 }
 
-.wisher-hp{
+.wisher-z-index-11 {
+    z-index: 11;
+}
+
+.wisher-hp {
     z-index: 10;
     width: 100%;
     height: 100%;
     position: fixed;
-    margin-top: 15em;
+    margin-top: 8em;
     margin-left: 30%;
     left: 0;
     top: 0;
 }
 
-.wisherhomebg{
-    position:fixed;
-    top:0;
-    left:0;
-    height:100%;
+.wisherhomebg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     float: center;
 }
 
@@ -42,21 +45,23 @@
 
 @media only screen and (max-width: 768px) {
 
-    .wisher-hp{
+    .wisher-hp {
         margin-left: 10%;
     }
-    .wisher-fm{
-    left: 90px;
-    width: 70%;
+
+    .wisher-fm {
+        left: 90px;
+        width: 70%;
     }
 
 }
 
 @media only screen and (max-width: 600px) {
-    .wisher-hp{
+    .wisher-hp {
         margin-left: -10%;
     }
-    .wisher-hp-bg{
-    left: -30%;
-}
+
+    .wisher-hp-bg {
+        left: -30%;
+    }
 }
