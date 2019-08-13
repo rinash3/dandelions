@@ -13,6 +13,7 @@ class Giverfill extends Component {
     state = {
         list: [{ "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": true }, { "object": "kdmcs ncjk", "person": "ndklsmcm nfdo", "date": "ee/ee/ee", "status": false }]
     }
+    
     closeProfile = (e) => {
         e.preventDefault();
         document.getElementById("ProfilePopup").style.display = "none"
@@ -56,7 +57,7 @@ class Giverfill extends Component {
 
 
 
-                <div className="giver-formbg">
+                <div className="giver-formbg animated fadeInUp">
                     <h1 className="white">What do you want to give?</h1>
                     <br /><br /><br />
                     <Catagory />

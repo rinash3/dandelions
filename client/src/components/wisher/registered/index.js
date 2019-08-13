@@ -49,7 +49,9 @@ class Wisherfill extends Component {
                     <textarea className="text margin-left-5vw black helvatica" name="memo" onChange={this.handleInputChange} placeholder="Ex: My prom is in 3 weeks and I need a nice dress">
                          </textarea>
                     <div className="margin-left-10vw">
-                        <Button location="/wisher/registered" click={this.click} />
+
+                        <Button location="/wisher/thankyou" />
+
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const BigCircle = (props) => {
 
     return (
         <div>
-            <div className="bigCircle" id={props.id}>
+            <div className="bigCircle animated fadeIn" id={props.id}>
                 <div onClick={props.closeC} className="cross">x</div>
                 <div id="contentC"></div>
             </div>
