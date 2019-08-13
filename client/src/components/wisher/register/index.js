@@ -52,7 +52,7 @@ class WisherForm extends Component {
         if (this.state.registered)
             return <WisherFill account={this.state.account} />
         return (
-            <div className="background z-index-upup container">
+            <div className="background z-index-upup animated fadeInUp">
                 <Background />
                
                 <br></br>
