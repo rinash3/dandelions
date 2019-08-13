@@ -57,7 +57,8 @@ class WisherForm extends Component {
                 <h1 className="wisher head">Tell us about you</h1>
                 <br></br>
                 <br></br>
-                <form className="wisher">
+                <form className="wisher-register">
+
                     <input
                         type="email"
                         placeholder="Email"

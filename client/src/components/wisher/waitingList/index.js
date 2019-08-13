@@ -37,6 +37,7 @@ class WaitingList extends Component {
                     <source src={bgvideo} type='video/mp4' />
                 </video>
                 <h1 className="paper-text animated pulse">Your wish is heard, we will contact you soon</h1>
+                
                 <ProfilePopup submit={this.submit} id="ProfilePopup" Close={this.closeProfile}
                     email={this.state.email} password={this.state.password} firstName={this.state.firstName}
                     lastName={this.state.lastName}

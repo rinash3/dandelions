@@ -7,12 +7,14 @@ h1 {
     color: black;
 }
 
-.wisher {
+.wisher-register {
     z-index: 1;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 10em;
+    left: 20%;
+    padding:5em 5em 5em 5em;
     height: auto;
+    background:white;
 
 
 }
