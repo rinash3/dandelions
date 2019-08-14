@@ -37,7 +37,7 @@ class Wisherdisplay extends Component {
         document.getElementById("theOne").style.backgroundColor=e.target.style.backgroundColor;
         document.getElementById("contentC").innerHTML="<div class='contentC'><h1 class='white'>You choose "+this.state.wishes[e.target.id].wisherName+"</h1><br/><h3>Object: "+this.state.wishes[e.target.id].name+"</br>"+this.state.wishes[e.target.id].memo+
         "</h3></br></br> <p>	Once you confirm, we will send you detailed shipping information. You can print out the form and ship it via UPS or Fedex for free.</br> After you ship the gift, you will receive a lottery numberat the shipping store. Enter it number and see what you will get. We offer a 7 day European trip to 3 people every month.</p></div>";
-        this.state.number=parseFloat(e.target.id);
+        // this.state.number=parseFloat(e.target.id);
     }
 
     closeC=(e)=>{
