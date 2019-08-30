@@ -65,7 +65,7 @@ class Wisherdisplay extends Component {
             {   
                 this.state.wishes.map((element,i)=> {
                 let y=Math.random()*(window.innerHeight-200)+100;
-                let x=Math.random()*(window.innerWidth-200)-200;
+                let x=Math.random()*(window.innerWidth-200);
                 let y1=y+1;
                 let x1=x+1;
                 // console.log('fine');
